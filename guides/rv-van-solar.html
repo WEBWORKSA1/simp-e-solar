@@ -1,0 +1,118 @@
+---
+layout: "default"
+title: "RV and van solar: a simple sizing guide | Simple.solar"
+description: "Size an RV or van solar system step by step: daily energy budget, panel watts, battery bank, system voltage, charge controller, wiring and fuses."
+canon: "https://simple.solar/guides/rv-van-solar.html"
+r: "../"
+nav: "guides"
+og_type: "article"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"RV and van solar: a simple sizing guide\", \"description\": \"Size an RV or van solar system step by step: daily energy budget, panel watts, battery bank, system voltage, charge controller, wiring and fuses.\", \"datePublished\": \"2026-10-22\", \"dateModified\": \"2026-10-22\", \"author\": {\"@type\": \"Organization\", \"name\": \"Simple.solar editorial team\", \"url\": \"https://simple.solar/about.html\"}, \"publisher\": {\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"Simple.solar\", \"url\": \"https://simple.solar\", \"logo\": \"https://simple.solar/assets/img/favicon.svg\"}, \"mainEntityOfPage\": \"https://simple.solar/guides/rv-van-solar.html\"}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://simple.solar/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Guides\", \"item\": \"https://simple.solar/guides/index.html\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"RV and van solar: a simple sizing guide\", \"item\": \"https://simple.solar/guides/rv-van-solar.html\"}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Can solar run an RV air conditioner?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes, but it takes a lot. A 13,500 BTU unit draws about 1,200 to 1,500 watts, so running it for 8 hours needs 10 kWh or more. Most rigs need a large battery bank and still use shore power or a generator.\"}}, {\"@type\": \"Question\", \"name\": \"Can I charge my house battery while driving?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. A DC-to-DC charger connects your vehicle's alternator to the house battery safely. It is a common addition to solar, especially for winter or cloudy trips.\"}}, {\"@type\": \"Question\", \"name\": \"Do I need an inverter?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Only if you want to run 120V AC devices. Many vans run on 12V DC for lights, fans, the fridge and USB charging, and add a small inverter for a laptop.\"}}, {\"@type\": \"Question\", \"name\": \"Are flexible panels a good choice?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"They are light and low profile, but they often run hotter and wear out sooner than rigid panels. Rigid panels on a mount usually last longer and produce more.\"}}]}</script>\n"
+scripts: ""
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Guides</a> / Plug-in, portable and off-grid</p>
+ <h1>RV and van solar: a simple sizing guide</h1>
+ <p class="lede">Size an RV or van solar system step by step: daily energy budget, panel watts, battery bank, system voltage, charge controller, wiring and fuses.</p>
+</div>
+<div class="wrap article-grid">
+ <article class="prose">
+  <p class="byline">By the Simple.solar editorial team. Reviewed October 2026. 6-minute read. <a href="../editorial-policy.html">How we research</a>.</p>
+  
+  <p>Solar on an RV or van lets you run lights, a fridge, fans and devices without plugging in or idling the engine. Sizing a system is simpler than it looks. You figure out how much energy you use each day, then pick panels to replace it and batteries to store it.</p>
+<p>This guide walks through each step with real numbers. It covers system voltage, charge controllers, lithium batteries and the wiring safety basics that keep your rig from catching fire.</p>
+
+<h2 id="how-much-energy-do-you-use-per-day">How much energy do you use per day?</h2>
+<p>Everything starts with your daily energy budget in watt-hours (Wh). List each device, its watts, and how many hours a day it runs. Multiply watts by hours, then add it all up.</p>
+<table>
+<thead><tr><th>Device</th><th>Watts</th><th>Hours per day</th><th>Wh per day</th></tr></thead>
+<tbody>
+<tr><td>12V compressor fridge (average)</td><td>45</td><td>24</td><td>1,080 nominal, about 450 real</td></tr>
+<tr><td>LED lights</td><td>15</td><td>5</td><td>75</td></tr>
+<tr><td>Roof fan</td><td>30</td><td>6</td><td>180</td></tr>
+<tr><td>Phones and tablet</td><td>20</td><td>3</td><td>60</td></tr>
+<tr><td>Laptop</td><td>60</td><td>4</td><td>240</td></tr>
+<tr><td>Water pump</td><td>60</td><td>0.5</td><td>30</td></tr>
+<tr><td><b>Total</b></td><td></td><td></td><td><b>1,035</b></td></tr>
+</tbody>
+</table>
+<p>A compressor fridge only runs part of the time, so its real use is often 30% to 50% of its rated watts times 24 hours. That is why the fridge counts as about 450 Wh in the total. Check your fridge's spec sheet for a daily figure.</p>
+<p>Round up. In this example, plan for about 1,100 Wh per day. If you run an induction cooktop, microwave or air conditioner, your budget can jump to 3,000 Wh or more.</p>
+
+<h2 id="how-many-solar-panel-watts-do-you-need">How many solar panel watts do you need?</h2>
+<p>Use this formula:</p>
+<p><b>Panel watts = daily Wh ÷ (sun hours × 0.75)</b></p>
+<p>"Sun hours" means peak sun hours: the number of hours per day the sun delivers full-strength light. Most of the US gets 4 to 6 in summer and 2 to 4 in winter. The 0.75 factor covers real-world losses from heat, flat mounting on a roof, dust, shade and wiring.</p>
+<p>For the 1,100 Wh example, with 5 summer sun hours:</p>
+<p>1,100 ÷ (5 × 0.75) = 1,100 ÷ 3.75 = about 293 watts.</p>
+<p>So 300 to 400 watts of panels would cover summer use. In winter with 3 sun hours: 1,100 ÷ 2.25 = about 489 watts. Roof space often limits you. A typical van roof fits 300 to 600 watts. A larger RV may fit 800 to 1,500 watts.</p>
+<div class="note">Panels lying flat on a roof produce less than tilted ones, especially in winter. If you camp often in cloudy places or in the cold months, plan on extra panel watts or a backup way to charge, such as charging from the alternator while you drive.</div>
+
+<div class="ad-slot" data-slot="inArticle"></div><h2 id="how-big-should-your-battery-bank-be">How big should your battery bank be?</h2>
+<p>Your battery stores energy for nights and cloudy days. A good target is one to two days of use.</p>
+<p>Lithium (LFP) batteries are now the standard for RVs and vans. You can safely use 80% to 100% of their capacity. Lead-acid batteries should only be drained to about 50%, so you need twice as much for the same usable energy.</p>
+<p>For the 1,100 Wh example with two days of storage: 1,100 × 2 = 2,200 Wh usable. On a 12V system, that is 2,200 ÷ 12.8 = about 172 amp-hours (Ah). A 200 Ah LFP battery fits well.</p>
+<p>With lead-acid, you would need about 344 Ah of capacity to get the same usable energy, and it would weigh about three times as much. LFP costs more upfront but usually lasts 3,000 or more cycles, compared with a few hundred for many lead-acid batteries.</p>
+<p>One caution: most LFP batteries cannot charge below freezing (32°F or 0°C). If you camp in the cold, look for batteries with built-in heaters, or keep them inside the heated living space.</p>
+
+<h2 id="should-you-build-a-12v-24v-or-48v-system">Should you build a 12V, 24V or 48V system?</h2>
+<p>System voltage is the voltage of your battery bank. Higher voltage means lower current for the same power, which lets you use thinner wire and lose less energy as heat.</p>
+<table>
+<thead><tr><th>Voltage</th><th>Best for</th><th>Pros</th><th>Cons</th></tr></thead>
+<tbody>
+<tr><td>12V</td><td>Vans and small RVs, under about 2,000 W of inverter</td><td>Works with standard RV appliances; most parts available</td><td>High current; thick, costly cables for big loads</td></tr>
+<tr><td>24V</td><td>Larger vans and RVs, 2,000–4,000 W inverter</td><td>Half the current of 12V; thinner wire</td><td>Needs a converter to run 12V devices</td></tr>
+<tr><td>48V</td><td>Large RVs, buses, high-power builds</td><td>Lowest current; most efficient for big inverters</td><td>Fewer RV parts; extra converters needed</td></tr>
+</tbody>
+</table>
+<p>Here is why voltage matters. A 2,000-watt inverter on 12V pulls 2,000 ÷ 12 = about 167 amps. On 24V it pulls about 83 amps, and on 48V about 42 amps. At 167 amps you need very thick cable, often 2/0 or 4/0 gauge. Most van builds stay at 12V. Builds with large inverters for air conditioning or induction cooking often move to 24V or 48V.</p>
+
+<h2 id="mppt-or-pwm-which-charge-controller-should-you-use">MPPT or PWM: which charge controller should you use?</h2>
+<p>A charge controller sits between your panels and battery. It keeps the battery from overcharging.</p>
+<ul>
+<li><b>PWM controllers</b> are cheap and simple. They require panel voltage to closely match the battery voltage, and they waste much of the extra voltage. They work for very small systems of 100 to 200 watts.</li>
+<li><b>MPPT controllers</b> convert extra panel voltage into extra charging current. They typically harvest 10% to 30% more energy than PWM, especially in cold weather or when panels are wired in series. They cost more but are the standard choice for any system over about 200 watts.</li>
+</ul>
+<p>Size an MPPT controller by its output amps. Divide panel watts by battery voltage. For 400 watts on 12V: 400 ÷ 12 = 33 amps, so a 40-amp controller leaves headroom. Also check that the panels' combined open-circuit voltage, in cold weather, stays under the controller's maximum input voltage.</p>
+
+<h2 id="how-do-you-wire-and-fuse-it-safely">How do you wire and fuse it safely?</h2>
+<p>Low voltage does not mean low risk. A lithium battery can release hundreds of amps in a short circuit, which can melt wire and start a fire. Follow these rules:</p>
+<ul>
+<li><b>Fuse every positive wire</b> near its power source: battery to inverter, battery to fuse block, controller to battery, and panels to controller.</li>
+<li><b>Size wire for the current and length.</b> Use a wire-gauge chart for your amps and round-trip length, aiming for under 3% voltage drop.</li>
+<li><b>Choose a fuse smaller than the wire's rating</b>, so the fuse blows before the wire overheats.</li>
+<li><b>Add a main battery disconnect</b> so you can cut all power quickly.</li>
+<li><b>Use marine-grade, fine-strand copper wire</b> and proper crimped lugs, not twisted connections.</li>
+<li><b>Secure batteries</b> so they cannot shift while driving.</li>
+</ul>
+<p>Hooking your rig to shore power or adding 120V outlets brings in household-voltage safety issues. Have a qualified RV technician or licensed electrician check any AC wiring.</p>
+
+<h2 id="what-do-sample-builds-look-like">What do sample builds look like?</h2>
+<p>These three builds cover most needs. Costs are rough parts-only ranges for a DIY install, and prices vary.</p>
+<table>
+<thead><tr><th>Build</th><th>Daily use</th><th>Panels</th><th>Battery (LFP)</th><th>Controller</th><th>Inverter</th><th>Typical parts cost</th></tr></thead>
+<tbody>
+<tr><td>Weekend</td><td>400–600 Wh</td><td>200 W</td><td>100 Ah at 12V (1.28 kWh)</td><td>20 A MPPT</td><td>500–1,000 W</td><td>$800–$1,500</td></tr>
+<tr><td>Part-time</td><td>1,000–1,500 Wh</td><td>400 W</td><td>200 Ah at 12V (2.56 kWh)</td><td>40 A MPPT</td><td>1,500–2,000 W</td><td>$2,000–$3,500</td></tr>
+<tr><td>Full-time</td><td>2,500–4,000 Wh</td><td>800–1,200 W</td><td>200–400 Ah at 24V (5–10 kWh)</td><td>60–100 A MPPT</td><td>3,000 W</td><td>$5,000–$10,000</td></tr>
+</tbody>
+</table>
+<p>Not ready for a fixed install? A portable power station with folding panels works well for weekend trips. See <a href="portable-power-stations.html">how to pick a portable power station</a>, or try the <a href="../tools/power-station.html">power station calculator</a>. For battery sizing, the <a href="../tools/battery-sizer.html">battery sizer</a> can help. And if you dream of going fully off the grid, read <a href="off-grid-basics.html">off-grid solar basics</a>.</p>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<details class="faq"><summary>Can solar run an RV air conditioner?</summary><p>Yes, but it takes a lot. A 13,500 BTU unit draws about 1,200 to 1,500 watts, so running it for 8 hours needs 10 kWh or more. Most rigs need a large battery bank and still use shore power or a generator.</p></details>
+<details class="faq"><summary>Can I charge my house battery while driving?</summary><p>Yes. A DC-to-DC charger connects your vehicle's alternator to the house battery safely. It is a common addition to solar, especially for winter or cloudy trips.</p></details>
+<details class="faq"><summary>Do I need an inverter?</summary><p>Only if you want to run 120V AC devices. Many vans run on 12V DC for lights, fans, the fridge and USB charging, and add a small inverter for a laptop.</p></details>
+<details class="faq"><summary>Are flexible panels a good choice?</summary><p>They are light and low profile, but they often run hotter and wear out sooner than rigid panels. Rigid panels on a mount usually last longer and produce more.</p></details>
+
+  <h2 id="watch">Watch: a short explainer</h2><div class="grid-3"><figure class="vid"><button class="yt" data-yt="adFGmOlDM-Y" aria-label="Play: Beginner and budget-friendly DIY solar system"></button><figcaption>Beginner and budget-friendly DIY solar system<small>DIY Solar Power with Will Prowse — a first off-grid build</small></figcaption></figure><figure class="vid"><button class="yt" data-yt="_xhyAyChumw" aria-label="Play: 5 ways portable power stations outshine gas generators"></button><figcaption>5 ways portable power stations outshine gas generators<small>Bailey Line Road — RV and camping perspective</small></figcaption></figure></div>
+  <div class="panel sunny" style="margin-top:2em"><h3 class="mt0">Want real numbers for your home?</h3><p>Answer six quick questions and up to three vetted local installers will send quotes you can compare side by side. Free, no obligation.</p><a class="btn ink" href="../quotes.html">Compare quotes</a></div>
+  <div class="ad-slot" data-slot="bottom"></div>
+  <h2 id="related" style="margin-top:2em">Keep reading</h2>
+  <ul class="glist" style="grid-template-columns:1fr"><li><a href="plug-in-balcony-solar.html"><strong>Plug-in and balcony solar: the complete beginner&#x27;s guide</strong><span>How plug-in balcony solar works, what an 800 W kit really makes, safety basics, typical costs, and where it is legal in the US and Germany.</span><em>7 min</em></a></li><li><a href="solar-for-renters.html"><strong>Solar for renters: 5 ways to use solar without owning a roof</strong><span>Renting does not shut you out of solar. Compare community solar, plug-in panels, power stations, green plans and landlord deals by cost and effort.</span><em>7 min</em></a></li><li><a href="portable-power-stations.html"><strong>Portable power stations: how to pick the right size</strong><span>How to size a portable power station using Wh capacity, continuous and surge watts, inverter losses and solar charge time, with worked examples.</span><em>7 min</em></a></li></ul>
+ </article>
+ <aside class="side"><div class="sticky">
+  <nav class="panel toc" aria-label="On this page"><h3 class="mt0">On this page</h3><ol><li><a href="#how-much-energy-do-you-use-per-day">How much energy do you use per day?</a></li><li><a href="#how-many-solar-panel-watts-do-you-need">How many solar panel watts do you need?</a></li><li><a href="#how-big-should-your-battery-bank-be">How big should your battery bank be?</a></li><li><a href="#should-you-build-a-12v-24v-or-48v-system">Should you build a 12V, 24V or 48V system?</a></li><li><a href="#mppt-or-pwm-which-charge-controller-should-you-use">MPPT or PWM: which charge controller should you use?</a></li><li><a href="#how-do-you-wire-and-fuse-it-safely">How do you wire and fuse it safely?</a></li><li><a href="#what-do-sample-builds-look-like">What do sample builds look like?</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+  <div class="panel leafy"><h3 class="mt0">Run your numbers</h3><p class="mb0">Free tools: <a href="../tools/savings-calculator.html">savings</a>, <a href="../tools/system-size.html">system size</a>, <a href="../tools/battery-sizer.html">battery backup</a>, <a href="../tools/power-station.html">power station</a>.</p></div>
+  <div class="ad-slot" data-slot="sidebar"></div>
+ </div></aside>
+</div>
