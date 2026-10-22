@@ -1,0 +1,103 @@
+<!--meta
+title: Portable power stations: how to pick the right size
+description: How to size a portable power station using Wh capacity, continuous and surge watts, inverter losses and solar charge time, with worked examples.
+cat: portable
+video: portable
+-->
+<p>A portable power station is a rechargeable battery with built-in outlets. You can use one for camping, short power outages, job sites or running a few devices off solar panels. Picking the right size comes down to two questions: how much energy you need, and how much power your devices draw at once.</p>
+<p>This guide walks through the specs that matter, the math to estimate runtime and charge time, and a table of common appliance watts. If you want to skip the math, use our <a href="../tools/power-station.html">power station calculator</a> to size one in a minute.</p>
+
+<h2>What do Wh and watts mean on a power station?</h2>
+<p>Every power station lists two key numbers.</p>
+<ul>
+<li><b>Capacity in watt-hours (Wh)</b> is how much energy is stored. A 1,000 Wh unit could, in theory, deliver 1,000 watts for one hour, or 100 watts for ten hours.</li>
+<li><b>Output in watts (W)</b> is the most power the inverter can deliver at one time. A unit rated at 1,200 W can run devices that add up to 1,200 watts together.</li>
+</ul>
+<p>Capacity tells you how long you can run things. Output tells you which things you can run at all. A large battery with a small inverter cannot run a microwave. A small battery with a big inverter can run a microwave, but not for long.</p>
+<p>Power stations from brands like EcoFlow, Jackery, Anker and Bluetti come in a wide range of sizes. Here is how they roughly break down:</p>
+<table>
+<thead><tr><th>Size class</th><th>Capacity</th><th>Typical output</th><th>Good for</th></tr></thead>
+<tbody>
+<tr><td>Small</td><td>250–500 Wh</td><td>300–500 W</td><td>Phones, laptops, lights, a CPAP-type small device overnight</td></tr>
+<tr><td>Medium</td><td>500–1,500 Wh</td><td>600–1,800 W</td><td>Camping, a mini fridge, short outages</td></tr>
+<tr><td>Large</td><td>1,500–3,000 Wh</td><td>1,800–3,000 W</td><td>A full-size fridge for half a day, power tools, RV use</td></tr>
+<tr><td>Expandable</td><td>3,000 Wh and up</td><td>3,000–7,000 W</td><td>Home backup for key circuits, longer outages</td></tr>
+</tbody>
+</table>
+
+<h2>What is the difference between continuous and surge watts?</h2>
+<p>Devices with motors or compressors need a burst of extra power when they start. A fridge that runs at 150 watts may need 600 to 1,200 watts for a second or two when its compressor kicks on. Pumps, power tools and air conditioners behave the same way.</p>
+<p>That is why power stations list two output ratings:</p>
+<ul>
+<li><b>Continuous (rated) watts:</b> what the unit can supply all the time.</li>
+<li><b>Surge (peak) watts:</b> a short burst, often double the continuous rating, for a few milliseconds to a few seconds.</li>
+</ul>
+<p>When you size a unit, add up the running watts of everything you will use at the same time. Make sure that total is below the continuous rating. Then check that your largest motor's start-up draw fits under the surge rating. If it does not, the unit will shut off the moment the motor starts.</p>
+
+<h2>Why does battery chemistry matter?</h2>
+<p>Most newer power stations use <b>LFP</b> (lithium iron phosphate) cells. Older and lighter models often use <b>NMC</b> (nickel manganese cobalt).</p>
+<p>LFP is typically rated for 3,000 to 4,000 cycles before it drops to about 80% of its original capacity. NMC is usually rated for 500 to 1,000 cycles. If you charge your unit daily, an LFP unit could last close to ten years, while an NMC unit might show clear fade in two or three. LFP is also more stable when hot. The trade-off is weight: LFP is heavier for the same capacity.</p>
+<p>If you only use a power station a few weekends a year, cycle life matters less. If you plan to use it every day with solar, choose LFP.</p>
+
+<h2>How do you calculate runtime?</h2>
+<p>You never get the full listed capacity out of the AC outlets. The inverter, which turns battery power into household AC power, loses some energy as heat. A good rule of thumb is that about 85% of the capacity reaches your devices. USB and 12V DC outlets skip the inverter and lose less, often around 90% to 95%.</p>
+<p>The formula is:</p>
+<p><b>Runtime (hours) = capacity (Wh) × 0.85 ÷ device watts</b></p>
+<h3>Worked example 1: a laptop and router</h3>
+<p>You have a 500 Wh unit. Your laptop draws 60 watts and your Wi-Fi router draws 15 watts, so the total is 75 watts.</p>
+<p>500 × 0.85 = 425 usable Wh. Then 425 ÷ 75 = about 5.7 hours.</p>
+<h3>Worked example 2: a fridge in an outage</h3>
+<p>Your fridge averages 150 watts over a day, because the compressor cycles on and off. You have a 2,000 Wh unit.</p>
+<p>2,000 × 0.85 = 1,700 usable Wh. Then 1,700 ÷ 150 = about 11 hours. To keep the fridge cold for 24 hours, you need about 150 × 24 ÷ 0.85 = 4,235 Wh, or a smaller unit plus a way to recharge it.</p>
+<h3>Worked example 3: a weekend camping trip</h3>
+<p>You plan to run a 45-watt 12V cooler for 10 hours a day, charge two phones (about 20 Wh total) and run 10 watts of lights for 5 hours.</p>
+<p>Cooler: 45 × 10 = 450 Wh. Phones: 20 Wh. Lights: 10 × 5 = 50 Wh. Total: 520 Wh per day. The cooler runs on the DC outlet, so the losses are smaller. Divide by about 0.9, and you need roughly 580 Wh per day. For two days without recharging, a unit of about 1,200 Wh is a good fit.</p>
+<div class="note">Size for your real daily total, then add 20% to 25% as a buffer. Batteries lose some capacity in cold weather and as they age, and most people end up plugging in more than they planned.</div>
+
+<h2>How many watts do common appliances use?</h2>
+<p>These are typical figures. Check the label on your device for its actual rating.</p>
+<table>
+<thead><tr><th>Appliance</th><th>Running watts</th><th>Start-up surge</th></tr></thead>
+<tbody>
+<tr><td>Phone charging</td><td>5–20</td><td>None</td></tr>
+<tr><td>Laptop</td><td>45–100</td><td>None</td></tr>
+<tr><td>Wi-Fi router and modem</td><td>10–25</td><td>None</td></tr>
+<tr><td>LED bulb</td><td>8–12</td><td>None</td></tr>
+<tr><td>CPAP-type small device (no heated humidifier)</td><td>30–60</td><td>Low</td></tr>
+<tr><td>12V portable fridge or cooler</td><td>40–60</td><td>Low</td></tr>
+<tr><td>Full-size fridge (average)</td><td>100–200</td><td>600–1,200</td></tr>
+<tr><td>TV (50-inch LED)</td><td>60–120</td><td>None</td></tr>
+<tr><td>Box or ceiling fan</td><td>30–75</td><td>Low</td></tr>
+<tr><td>Microwave</td><td>1,000–1,500</td><td>Low</td></tr>
+<tr><td>Coffee maker</td><td>800–1,200</td><td>None</td></tr>
+<tr><td>Window air conditioner</td><td>500–1,200</td><td>1,500–3,000</td></tr>
+<tr><td>Circular saw</td><td>1,200–1,800</td><td>2,500–3,500</td></tr>
+</tbody>
+</table>
+<p>Anything that makes heat, such as a space heater, kettle or hair dryer, draws a lot of power. A 1,500-watt space heater would drain a 2,000 Wh unit in a little over an hour (2,000 × 0.85 ÷ 1,500 ≈ 1.1 hours).</p>
+
+<h2>How long does it take to recharge with solar?</h2>
+<p>Most power stations accept solar panels through a built-in charge controller. Each unit has a maximum solar input, often 100 to 1,000 watts or more. Connecting more panels than the limit will not charge it faster.</p>
+<p>Solar panels rarely produce their full rated watts. Heat, angle, clouds and dust usually cut real output to about 70% to 80% of the label. The charge time formula is:</p>
+<p><b>Charge time (hours) = capacity (Wh) ÷ (solar watts × 0.75)</b></p>
+<p>For example, a 1,000 Wh unit with 200 watts of panels: 200 × 0.75 = 150 real watts. Then 1,000 ÷ 150 = about 6.7 hours of good sun. Most places get 4 to 6 hours of strong sun a day, so that is roughly one to two days to refill from empty.</p>
+<p>Double the panels to 400 watts, and the same unit charges in about 3.3 hours, if its solar input limit allows 400 watts. Wall charging is usually much faster, often one to two hours on larger units.</p>
+<p>Want a permanent setup instead? Our guide to <a href="rv-van-solar.html">RV and van solar</a> covers fixed systems, and the <a href="../tools/plug-in-solar.html">plug-in solar tool</a> explains small balcony and plug-in panels.</p>
+
+<h2>How do you pick the right size?</h2>
+<p>Follow these steps:</p>
+<ol>
+<li>List every device you want to run and its running watts.</li>
+<li>Estimate hours of use per day and multiply to get Wh per day.</li>
+<li>Add the totals, divide by 0.85 for AC loads, and add a 20% buffer. That is your minimum capacity.</li>
+<li>Add the running watts of devices used together. Pick a unit with a higher continuous rating.</li>
+<li>Check the surge rating against your biggest motor.</li>
+<li>If you will recharge from solar, check the solar input limit and run the charge time math.</li>
+</ol>
+<p>Or plug your list into the <a href="../tools/power-station.html">power station calculator</a>, which does these steps for you. If you need backup for more than a few devices, compare options in <a href="power-outage-backup.html">backing up your home in a power outage</a>.</p>
+
+<h2>Frequently asked questions</h2>
+<details class="faq"><summary>Can I use a power station while it charges?</summary><p>Most models support pass-through charging, so you can run devices while the unit charges. Check the manual, since some limit output while charging.</p></details>
+<details class="faq"><summary>Can a power station run a full-size fridge?</summary><p>Yes, if its surge rating can handle the compressor start-up. A 1,000 Wh unit runs a typical fridge for about 5 to 6 hours.</p></details>
+<details class="faq"><summary>How should I store a power station between uses?</summary><p>Store it at about 50% to 80% charge in a cool, dry place. Top it up every few months so the battery does not drain fully.</p></details>
+<details class="faq"><summary>Is a bigger power station always better?</summary><p>Not always. Larger units cost more and can weigh 40 to 100 pounds. Buy the size your real daily use needs, plus a buffer.</p></details>
