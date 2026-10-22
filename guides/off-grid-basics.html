@@ -1,0 +1,111 @@
+---
+layout: "default"
+title: "Off-grid solar basics: what it really takes | Simple.solar"
+description: "What an off-grid solar system needs: winter design, days of autonomy, battery sizing, generator backup, inverters, realistic costs and permits."
+canon: "https://simple.solar/guides/off-grid-basics.html"
+r: "../"
+nav: "guides"
+og_type: "article"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"Article\", \"headline\": \"Off-grid solar basics: what it really takes\", \"description\": \"What an off-grid solar system needs: winter design, days of autonomy, battery sizing, generator backup, inverters, realistic costs and permits.\", \"datePublished\": \"2026-10-22\", \"dateModified\": \"2026-10-22\", \"author\": {\"@type\": \"Organization\", \"name\": \"Simple.solar editorial team\", \"url\": \"https://simple.solar/about.html\"}, \"publisher\": {\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"Simple.solar\", \"url\": \"https://simple.solar\", \"logo\": \"https://simple.solar/assets/img/favicon.svg\"}, \"mainEntityOfPage\": \"https://simple.solar/guides/off-grid-basics.html\"}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://simple.solar/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Guides\", \"item\": \"https://simple.solar/guides/index.html\"}, {\"@type\": \"ListItem\", \"position\": 3, \"name\": \"Off-grid solar basics: what it really takes\", \"item\": \"https://simple.solar/guides/off-grid-basics.html\"}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Can I go off-grid with just solar panels and no battery?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Not in a practical way. Without a battery, you only have power while the sun shines, and output changes with every passing cloud.\"}}, {\"@type\": \"Question\", \"name\": \"How long do off-grid batteries last?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"LFP batteries often last 10 to 15 years or 3,000 to 6,000 cycles. Lead-acid batteries usually last 5 to 8 years with good care.\"}}, {\"@type\": \"Question\", \"name\": \"Can I start small and expand later?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes, if you plan for it. Choose an inverter and charge controller with room to grow, and add batteries of the same type within a few years of each other.\"}}, {\"@type\": \"Question\", \"name\": \"Can I run a well pump off-grid?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes, but well pumps have high start-up surges. Size your inverter for the surge, or use a soft-start or variable-speed pump to reduce it.\"}}]}</script>\n"
+scripts: ""
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Guides</a> / Plug-in, portable and off-grid</p>
+ <h1>Off-grid solar basics: what it really takes</h1>
+ <p class="lede">What an off-grid solar system needs: winter design, days of autonomy, battery sizing, generator backup, inverters, realistic costs and permits.</p>
+</div>
+<div class="wrap article-grid">
+ <article class="prose">
+  <p class="byline">By the Simple.solar editorial team. Reviewed October 2026. 7-minute read. <a href="../editorial-policy.html">How we research</a>.</p>
+  
+  <p>Living off the grid means your home makes and stores all its own power. There is no utility to fall back on when the batteries run low on a cloudy week in December. That changes how you design everything.</p>
+<p>A grid-tied system can be sized to cover your yearly average. An off-grid system has to handle your worst month. This guide explains the key design ideas, shows the math for a real example, and gives honest cost ranges so you can decide if off-grid fits your plans.</p>
+
+<h2 id="how-is-off-grid-different-from-regular-solar">How is off-grid different from regular solar?</h2>
+<p>With grid-tied solar, the utility acts like an endless battery. Extra power flows out at noon, and you draw it back at night. If your panels fall short, the grid fills the gap.</p>
+<p>Off-grid, you have none of that. Every kWh you use at night or on a cloudy day must come from your own battery bank. When the bank is empty, you need a generator or you go dark. As a result, off-grid systems need:</p>
+<ul>
+<li>More solar panels, sized for winter instead of the yearly average.</li>
+<li>A much larger battery bank, sized for several days with little sun.</li>
+<li>A backup generator for long stretches of bad weather.</li>
+<li>Careful control of how much energy you use.</li>
+</ul>
+<p>If you are new to the basics, start with <a href="how-solar-works.html">how solar works</a>.</p>
+
+<h2 id="why-do-you-design-for-the-winter-month">Why do you design for the winter month?</h2>
+<p>Solar output changes a lot with the seasons. In much of the northern US, a panel may make three to four times more energy in June than in December. Days are shorter, the sun is lower, and snow can cover panels.</p>
+<p>Off-grid designers pick a <b>design month</b>, which is the month with the worst balance of sun and energy use. For most homes, that is December or January. Heating fans, lights on longer, and fewer sun hours all hit at once.</p>
+<p>Here is the panel sizing formula:</p>
+<p><b>Panel watts = daily Wh ÷ (winter sun hours × 0.75)</b></p>
+<p>The 0.75 factor covers losses from heat, wiring, dust, inverter and battery charging. Say your cabin uses 5,000 Wh (5 kWh) per day and your site gets 2.5 peak sun hours in December:</p>
+<p>5,000 ÷ (2.5 × 0.75) = 5,000 ÷ 1.875 = about 2,667 watts. Round up to about 3,000 watts of panels.</p>
+<p>In summer, with 6 sun hours, that same array makes about 13,500 Wh per day, far more than you need. That surplus is normal for off-grid. Tilting panels steeply, at about your latitude plus 15 degrees, helps boost winter output and shed snow. You can look up sun hours by location using data from NREL. Our <a href="../tools/system-size.html">system size tool</a> can also help with the math.</p>
+
+<div class="ad-slot" data-slot="inArticle"></div><h2 id="how-many-days-of-autonomy-do-you-need">How many days of autonomy do you need?</h2>
+<p><b>Days of autonomy</b> means how many days your battery can run your home with no solar input at all. It is your buffer for storms and cloudy stretches.</p>
+<ul>
+<li><b>1 to 2 days:</b> fine for a weekend cabin or a sunny climate with a generator on standby.</li>
+<li><b>3 days:</b> a common target for full-time homes with a backup generator.</li>
+<li><b>5 days or more:</b> for cloudy climates or homes with no generator, though the cost climbs fast.</li>
+</ul>
+<p>More autonomy means a bigger, more expensive battery bank. Most people settle on two to three days plus a generator. That is usually cheaper than buying enough batteries to ride out a week of clouds.</p>
+
+<h2 id="how-do-you-size-the-battery-bank">How do you size the battery bank?</h2>
+<p>Use this formula:</p>
+<p><b>Battery kWh = daily kWh × days of autonomy ÷ usable depth of discharge</b></p>
+<p>For LFP lithium batteries, usable depth of discharge is about 0.8 to 0.9 for long life. For lead-acid, it is about 0.5.</p>
+<p>Using the 5 kWh per day cabin with 3 days of autonomy and LFP at 0.8:</p>
+<p>5 × 3 ÷ 0.8 = 18.75 kWh. Round up to about 20 kWh of battery.</p>
+<p>With lead-acid at 0.5, you would need 5 × 3 ÷ 0.5 = 30 kWh. That is much heavier, needs regular care, and often wears out within 5 to 8 years. That is why most new off-grid systems use LFP.</p>
+<p>Batteries also lose capacity in the cold. Keep them inside a heated or insulated space. Most LFP batteries cannot charge below freezing without a built-in heater. To try different scenarios, use the <a href="../tools/battery-sizer.html">battery sizer</a>.</p>
+<div class="note">Cutting your energy use is the cheapest way to shrink an off-grid system. Every 1 kWh you save per day removes roughly 500 watts of panels and 4 kWh of battery from the design above.</div>
+
+<h2 id="do-you-need-a-generator-and-an-all-in-one-inverter">Do you need a generator and an all-in-one inverter?</h2>
+<h3>Generator backup</h3>
+<p>For almost every full-time off-grid home, yes. A generator covers long cloudy spells, heavy snow and equipment problems. It also keeps lead-acid batteries healthy with full charges.</p>
+<p>A 5 to 10 kW generator running on propane, gasoline or diesel is typical. Many off-grid inverters can start a generator on their own when the battery drops to a set level, then shut it off when the battery is charged. In a well-designed system, the generator may only run 50 to 200 hours a year, mostly in winter.</p>
+<p>Without a generator, you would need far more battery and panels to stay safe through the worst weeks. For most people, that costs more than a generator plus fuel.</p>
+
+<h3>All-in-one inverters</h3>
+<p>An off-grid system needs several parts: a solar charge controller, a battery charger for the generator, and an inverter to make household AC power. An <b>all-in-one</b> (or hybrid off-grid) inverter combines them in one box.</p>
+<p>These units usually include an MPPT charge controller, a 120V or 120/240V inverter, a generator input with automatic switching, and a monitoring screen or app. They make installs simpler and cleaner. Common sizes run from 3 kW to 12 kW of output, and many can be stacked for more power.</p>
+<p>Size the inverter for your largest combined load plus motor surge. A well pump, for example, can surge to 3 to 5 times its running watts. Homes with 240V loads like well pumps need a split-phase inverter or a transformer. Since this ties into your home's main wiring, have a licensed electrician do the install.</p>
+
+<h2 id="how-does-a-cabin-differ-from-a-full-home">How does a cabin differ from a full home?</h2>
+<p>A small cabin and a full-time house are very different projects.</p>
+<p>A weekend cabin might use 1 to 3 kWh per day for lights, a fridge, a water pump and charging. It can often run on a few panels, a modest battery and propane for cooking and heat.</p>
+<p>A typical US home uses about 25 to 30 kWh per day, according to EIA data. Off-grid homes usually cut that to 8 to 15 kWh with efficient appliances, propane or wood heat, and careful habits. Electric heat, central air and electric water heaters are very hard to power off-grid in winter. Most off-grid homes switch to propane, wood or heat pumps sized for low winter output.</p>
+<table>
+<thead><tr><th>System</th><th>Daily use</th><th>Panels</th><th>Battery (LFP)</th><th>Inverter</th><th>Typical installed cost</th></tr></thead>
+<tbody>
+<tr><td>Weekend cabin</td><td>1–3 kWh</td><td>800–1,500 W</td><td>5–10 kWh</td><td>2–3 kW</td><td>$6,000–$15,000</td></tr>
+<tr><td>Small full-time home</td><td>5–8 kWh</td><td>3–5 kW</td><td>15–25 kWh</td><td>5–6 kW</td><td>$25,000–$45,000</td></tr>
+<tr><td>Average efficient home</td><td>10–15 kWh</td><td>6–10 kW</td><td>30–50 kWh</td><td>8–12 kW</td><td>$45,000–$80,000</td></tr>
+<tr><td>Large home</td><td>20+ kWh</td><td>12+ kW</td><td>60+ kWh</td><td>12+ kW</td><td>$80,000 and up</td></tr>
+</tbody>
+</table>
+<p>These are rough ranges and quotes vary widely. Costs include panels, mounting, batteries, inverter and install, but often not a generator or the cost of bringing a remote site up to code.</p>
+
+<h2 id="is-off-grid-worth-the-cost-and-what-about-permits">Is off-grid worth the cost, and what about permits?</h2>
+<p>Be realistic. Off-grid usually costs more per kWh than grid power. Batteries need replacing every 10 to 15 years, and generators need fuel and service. Off-grid makes the most financial sense when bringing in utility power is expensive. Running a grid line to a remote lot can cost $20,000 to $100,000 or more, depending on distance.</p>
+<p>If your home already has a grid connection, a grid-tied system with a battery is usually cheaper and gives you backup in outages. Read <a href="home-batteries-explained.html">home solar batteries explained</a> to compare.</p>
+<p>Off-grid does not mean free of rules. Most areas still require electrical permits and inspections, and many follow the National Electrical Code. Some places have rules on battery placement, fire setbacks and whether a home can be occupied without a grid connection. Check with your local building department before you buy anything. Use a licensed electrician for the main wiring. If you want help from local pros, get offers through our <a href="../quotes.html">quotes page</a>. For incentives that may apply, check current incentives in our <a href="solar-incentives.html">incentives guide</a>.</p>
+
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<details class="faq"><summary>Can I go off-grid with just solar panels and no battery?</summary><p>Not in a practical way. Without a battery, you only have power while the sun shines, and output changes with every passing cloud.</p></details>
+<details class="faq"><summary>How long do off-grid batteries last?</summary><p>LFP batteries often last 10 to 15 years or 3,000 to 6,000 cycles. Lead-acid batteries usually last 5 to 8 years with good care.</p></details>
+<details class="faq"><summary>Can I start small and expand later?</summary><p>Yes, if you plan for it. Choose an inverter and charge controller with room to grow, and add batteries of the same type within a few years of each other.</p></details>
+<details class="faq"><summary>Can I run a well pump off-grid?</summary><p>Yes, but well pumps have high start-up surges. Size your inverter for the surge, or use a soft-start or variable-speed pump to reduce it.</p></details>
+
+  <h2 id="watch">Watch: a short explainer</h2><div class="grid-3"><figure class="vid"><button class="yt" data-yt="adFGmOlDM-Y" aria-label="Play: Beginner and budget-friendly DIY solar system"></button><figcaption>Beginner and budget-friendly DIY solar system<small>DIY Solar Power with Will Prowse — a first off-grid build</small></figcaption></figure><figure class="vid"><button class="yt" data-yt="_xhyAyChumw" aria-label="Play: 5 ways portable power stations outshine gas generators"></button><figcaption>5 ways portable power stations outshine gas generators<small>Bailey Line Road — RV and camping perspective</small></figcaption></figure></div>
+  <div class="panel sunny" style="margin-top:2em"><h3 class="mt0">Want real numbers for your home?</h3><p>Answer six quick questions and up to three vetted local installers will send quotes you can compare side by side. Free, no obligation.</p><a class="btn ink" href="../quotes.html">Compare quotes</a></div>
+  <div class="ad-slot" data-slot="bottom"></div>
+  <h2 id="related" style="margin-top:2em">Keep reading</h2>
+  <ul class="glist" style="grid-template-columns:1fr"><li><a href="plug-in-balcony-solar.html"><strong>Plug-in and balcony solar: the complete beginner&#x27;s guide</strong><span>How plug-in balcony solar works, what an 800 W kit really makes, safety basics, typical costs, and where it is legal in the US and Germany.</span><em>7 min</em></a></li><li><a href="solar-for-renters.html"><strong>Solar for renters: 5 ways to use solar without owning a roof</strong><span>Renting does not shut you out of solar. Compare community solar, plug-in panels, power stations, green plans and landlord deals by cost and effort.</span><em>7 min</em></a></li><li><a href="portable-power-stations.html"><strong>Portable power stations: how to pick the right size</strong><span>How to size a portable power station using Wh capacity, continuous and surge watts, inverter losses and solar charge time, with worked examples.</span><em>7 min</em></a></li></ul>
+ </article>
+ <aside class="side"><div class="sticky">
+  <nav class="panel toc" aria-label="On this page"><h3 class="mt0">On this page</h3><ol><li><a href="#how-is-off-grid-different-from-regular-solar">How is off-grid different from regular solar?</a></li><li><a href="#why-do-you-design-for-the-winter-month">Why do you design for the winter month?</a></li><li><a href="#how-many-days-of-autonomy-do-you-need">How many days of autonomy do you need?</a></li><li><a href="#how-do-you-size-the-battery-bank">How do you size the battery bank?</a></li><li><a href="#do-you-need-a-generator-and-an-all-in-one-inverter">Do you need a generator and an all-in-one inverter?</a></li><li><a href="#how-does-a-cabin-differ-from-a-full-home">How does a cabin differ from a full home?</a></li><li><a href="#is-off-grid-worth-the-cost-and-what-about-permits">Is off-grid worth the cost, and what about permits?</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav>
+  <div class="panel leafy"><h3 class="mt0">Run your numbers</h3><p class="mb0">Free tools: <a href="../tools/savings-calculator.html">savings</a>, <a href="../tools/system-size.html">system size</a>, <a href="../tools/battery-sizer.html">battery backup</a>, <a href="../tools/power-station.html">power station</a>.</p></div>
+  <div class="ad-slot" data-slot="sidebar"></div>
+ </div></aside>
+</div>
