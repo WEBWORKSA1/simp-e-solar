@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<!--meta
+-->
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Solar by state</a> / {{ page.name }}</p>
+ <h1>Solar in {{ page.name }}: is it worth it?</h1>
+ <p class="lede">{{ page.name }} homes pay about {{ page.rate }}¢ per kWh and get about {{ page.sun }} peak sun hours a day. Here's what that means for cost, savings and payback.</p>
+</div>
+<div class="wrap article-grid">
+ <article class="prose">
+  <div class="answer"><strong>{{ page.verdict }} case for rooftop solar</strong>{{ page.verdict_text }} For a $150 monthly bill we estimate a {{ page.size150 }} kW system costing about {{ page.cost150 }}, saving about {{ page.save150 }} in year one and paying back in about {{ page.payback150 }} years. {{ page.name }} ranks #{{ page.rank }} of 51 for solar payback.</div>
+  <h2 id="numbers">The two numbers that matter</h2>
+  <p><b>Electricity price: {{ page.rate }}¢/kWh</b>, {{ page.rate_vs }} the national state average of {{ page.avg_rate }}¢. Every kilowatt-hour your panels make replaces one you'd buy at this price, so higher prices mean faster payback.</p>
+  <p><b>Sunshine: {{ page.sun }} peak sun hours a day</b>, {{ page.sun_vs }} than the state average of {{ page.avg_sun }}. Each kW of panels here makes roughly {{ page.yearly_kwh_kw }} kWh a year after real-world losses.</p>
+  <h2 id="estimates">Estimates by bill size</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th>Monthly bill</th><th class="num">Usage</th><th class="num">System</th><th class="num">Cost</th><th class="num">Year-1 savings</th><th class="num">Payback</th><th class="num">25-yr net</th></tr></thead><tbody>{{ page.rows }}</tbody></table></div>
+  <p class="fine">Assumes ${{ page.cpw }}/W installed, 90% usage offset, no federal tax credit, 3% yearly price rise and 0.5% yearly panel degradation. Sources: {{ page.rate_src }}; {{ page.sun_src }}.</p>
+  <div class="ad-slot" data-slot="inArticle"></div>
+  <h2 id="incentives">Incentives in {{ page.name }}</h2>
+  <p>{{ page.policy }}</p>
+  <p>The US 30% Residential Clean Energy Credit ended for homeowner systems installed after December 31, 2025. Leased systems and PPAs may still be priced with a federal business credit. See <a href="../guides/solar-incentives.html">solar incentives in 2026</a>.</p>
+  <h2 id="plugin">Plug-in and balcony solar in {{ page.name }}</h2>
+  <p>{{ page.plugin }}</p>
+  <p>Estimate a kit with the <a href="../tools/plug-in-solar.html">plug-in solar calculator</a>.</p>
+  <h2 id="next">Next steps</h2>
+  <ol>
+   <li>Check your actual rate on your bill. Many utilities in {{ page.name }} charge more or less than the state average.</li>
+   <li>Run your own numbers in the <a href="../tools/savings-calculator.html?state={{ page.code }}">savings calculator</a>.</li>
+   <li>Get at least three quotes and compare the price per watt. Use our <a href="../guides/solar-quote-checklist.html">quote checklist</a>.</li>
+  </ol>
+  <h2 id="faq">Questions about solar in {{ page.name }}</h2>
+  <details class="faq"><summary>Is solar worth it in {{ page.name }}?</summary><p>{{ page.verdict }} case. {{ page.verdict_text }}</p></details>
+  <details class="faq"><summary>How much does a solar system cost in {{ page.name }}?</summary><p>At about ${{ page.cpw }} per watt before incentives, a {{ page.size150 }} kW system costs roughly {{ page.cost150 }}. Local quotes vary with roof, equipment and installer.</p></details>
+  <details class="faq"><summary>How many panels would a {{ page.name }} home need?</summary><p>For a $150 monthly bill, about {{ page.size150 }} kW, or roughly 2.3 panels per kW using 430 W panels. Use the <a href="../tools/system-size.html">system size calculator</a> for your exact usage.</p></details>
+  <h2 id="similar">States with similar power prices</h2>
+  <p>{{ page.neighbors }}</p>
+ </article>
+ <aside class="side"><div class="sticky">
+  <div class="panel sunny"><h3 class="mt0">Real quotes for {{ page.name }}</h3><p>Compare up to three vetted local installers. Free, and email-only if you prefer.</p><a class="btn ink" href="../quotes.html?state={{ page.code }}">Compare quotes</a></div>
+  <div class="panel"><h3 class="mt0">At a glance</h3><ul class="mb0" style="padding-left:1.1em;margin:0"><li>Power: {{ page.rate }}¢/kWh</li><li>Sun: {{ page.sun }} h/day</li><li>Typical system: {{ page.size150 }} kW</li><li>Payback: {{ page.payback150 }} yrs</li><li>Rank: #{{ page.rank }} of 51</li></ul></div>
+  <div class="ad-slot" data-slot="top"></div>
+ </div></aside>
+</div>
