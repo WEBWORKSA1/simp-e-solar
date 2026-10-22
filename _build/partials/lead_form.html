@@ -1,0 +1,84 @@
+<form class="form lead-shell" id="lead-form" data-form="Solar quote request" data-steps data-redirect="{{r}}thank-you.html" novalidate>
+ <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+ <div class="steps-bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+ <p class="fine mb0" data-step-count aria-live="polite">Step 1 of 6</p>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0">
+  <legend class="step-q">Where is the home?</legend>
+  <p class="muted">Prices, sunshine and incentives depend on location.</p>
+  <div class="row">
+   <div><label for="lf-zip">ZIP or postal code</label><input id="lf-zip" name="zip" inputmode="text" autocomplete="postal-code" required maxlength="10" placeholder="e.g. 85004"></div>
+   <div><label for="lf-state">State or region</label><select id="lf-state" name="state" required><option value="">Choose…</option>{{state_options}}<option value="CA-ON">Canada — Ontario</option><option value="CA-OTHER">Canada — other province</option><option value="OTHER">Outside the US and Canada</option></select></div>
+  </div>
+  <div class="step-nav"><span></span><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">Do you own or rent?</legend>
+  <div class="choices" data-need-one data-autonext>
+   <label><input type="radio" name="ownership" value="Own"><span>I own it<small>House, townhouse or farm</small></span></label>
+   <label><input type="radio" name="ownership" value="Rent"><span>I rent<small>We'll show renter options</small></span></label>
+   <label><input type="radio" name="ownership" value="Buying soon"><span>Buying soon<small>Planning ahead</small></span></label>
+   <label><input type="radio" name="ownership" value="Business"><span>A business<small>Commercial property</small></span></label>
+  </div>
+  <p class="note" id="renter-note" hidden>Renting? Rooftop installers usually need the owner's approval. We'll also send you plug-in and community solar options, which don't need a roof. Or <a href="{{r}}guides/solar-for-renters.html">read the renter's guide</a>.</p>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">What's your average monthly electric bill?</legend>
+  <div class="ctrl"><label for="lf-bill">Monthly bill <output id="lf-bill-out">$150</output></label>
+   <input id="lf-bill" name="bill" type="range" min="30" max="600" step="10" value="150"></div>
+  <p class="fine">Not sure? Most US homes pay between $120 and $200.</p>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">How much sun does your roof get?</legend>
+  <div class="choices" data-need-one data-autonext>
+   <label><input type="radio" name="sun" value="Full sun"><span>Full sun<small>Little or no shade</small></span></label>
+   <label><input type="radio" name="sun" value="Some shade"><span>Some shade<small>Trees part of the day</small></span></label>
+   <label><input type="radio" name="sun" value="Heavy shade"><span>Heavy shade<small>Mostly shaded</small></span></label>
+   <label><input type="radio" name="sun" value="Not sure"><span>Not sure<small>An installer will check</small></span></label>
+  </div>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">What are you interested in?</legend>
+  <div class="choices" data-need-one>
+   <label><input type="radio" name="interest" value="Solar panels"><span>Solar panels</span></label>
+   <label><input type="radio" name="interest" value="Solar + battery"><span>Solar + battery</span></label>
+   <label><input type="radio" name="interest" value="Battery only"><span>Battery backup only</span></label>
+   <label><input type="radio" name="interest" value="Plug-in or portable"><span>Plug-in or portable</span></label>
+  </div>
+  <div class="row">
+   <div><label for="lf-when">When would you like it installed?</label><select id="lf-when" name="timeline"><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Just researching</option></select></div>
+   <div><label for="lf-pay">How would you prefer to pay?</label><select id="lf-pay" name="payment"><option>Not sure yet</option><option>Cash</option><option>Loan</option><option>Lease or PPA</option></select></div>
+  </div>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>See my estimate</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">Your estimate is ready</legend>
+  <div class="kpis" id="lf-preview" aria-live="polite">
+   <div class="kpi"><b data-p="size">—</b><span>Suggested system</span></div>
+   <div class="kpi good"><b data-p="save">—</b><span>First-year savings</span></div>
+   <div class="kpi"><b data-p="payback">—</b><span>Estimated payback</span></div>
+  </div>
+  <p class="fine">Where should we send the full breakdown and up to three local quotes?</p>
+  <div class="row">
+   <div><label for="lf-name">Full name</label><input id="lf-name" name="name" required autocomplete="name"></div>
+   <div><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" required autocomplete="email"></div>
+  </div>
+  <div class="row">
+   <div><label for="lf-phone">Phone <span class="muted">(optional)</span></label><input id="lf-phone" name="phone" type="tel" autocomplete="tel"></div>
+   <div><label for="lf-contact">Who may contact you?</label><select id="lf-contact" name="contact_pref"><option>Up to 3 vetted installers</option><option>1 installer only</option><option>Email only — no calls</option></select></div>
+  </div>
+  <label class="check"><input type="checkbox" name="consent" value="Yes" required> I agree that Simple.solar and up to three matched solar companies may contact me about my request by email, phone or text, including by automated means. Consent is not a condition of any purchase. I can opt out at any time. See the <a href="{{r}}privacy.html">privacy policy</a>.</label>
+  <input type="hidden" name="estimate" value="">
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="submit" class="btn sun">Send my free quotes</button></div>
+ </fieldset>
+ <p class="form-status" aria-live="polite"></p>
+ <ul class="trust"><li>Free, no obligation</li><li>Shared with 3 companies at most</li><li>Email-only option</li><li>Unsubscribe any time</li></ul>
+</form>

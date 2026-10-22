@@ -1,0 +1,42 @@
+<!--meta
+-->
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Solar by state</a> / {{name}}</p>
+ <h1>Solar in {{name}}: is it worth it?</h1>
+ <p class="lede">{{name}} homes pay about {{rate}}¢ per kWh and get about {{sun}} peak sun hours a day. Here's what that means for cost, savings and payback.</p>
+</div>
+<div class="wrap article-grid">
+ <article class="prose">
+  <div class="answer"><strong>{{verdict}} case for rooftop solar</strong>{{verdict_text}} For a $150 monthly bill we estimate a {{size150}} kW system costing about {{cost150}}, saving about {{save150}} in year one and paying back in about {{payback150}} years. {{name}} ranks #{{rank}} of 51 for solar payback.</div>
+  <h2 id="numbers">The two numbers that matter</h2>
+  <p><b>Electricity price: {{rate}}¢/kWh</b>, {{rate_vs}} the national state average of {{avg_rate}}¢. Every kilowatt-hour your panels make replaces one you'd buy at this price, so higher prices mean faster payback.</p>
+  <p><b>Sunshine: {{sun}} peak sun hours a day</b>, {{sun_vs}} than the state average of {{avg_sun}}. Each kW of panels here makes roughly {{yearly_kwh_kw}} kWh a year after real-world losses.</p>
+  <h2 id="estimates">Estimates by bill size</h2>
+  <div class="table-wrap"><table class="data"><thead><tr><th>Monthly bill</th><th class="num">Usage</th><th class="num">System</th><th class="num">Cost</th><th class="num">Year-1 savings</th><th class="num">Payback</th><th class="num">25-yr net</th></tr></thead><tbody>{{rows}}</tbody></table></div>
+  <p class="fine">Assumes ${{cpw}}/W installed, 90% usage offset, no federal tax credit, 3% yearly price rise and 0.5% yearly panel degradation. Sources: {{rate_src}}; {{sun_src}}.</p>
+  {{ad:inArticle}}
+  <h2 id="incentives">Incentives in {{name}}</h2>
+  <p>{{policy}}</p>
+  <p>The US 30% Residential Clean Energy Credit ended for homeowner systems installed after December 31, 2025. Leased systems and PPAs may still be priced with a federal business credit. See <a href="../guides/solar-incentives.html">solar incentives in 2026</a>.</p>
+  <h2 id="plugin">Plug-in and balcony solar in {{name}}</h2>
+  <p>{{plugin}}</p>
+  <p>Estimate a kit with the <a href="../tools/plug-in-solar.html">plug-in solar calculator</a>.</p>
+  <h2 id="next">Next steps</h2>
+  <ol>
+   <li>Check your actual rate on your bill. Many utilities in {{name}} charge more or less than the state average.</li>
+   <li>Run your own numbers in the <a href="../tools/savings-calculator.html?state={{code}}">savings calculator</a>.</li>
+   <li>Get at least three quotes and compare the price per watt. Use our <a href="../guides/solar-quote-checklist.html">quote checklist</a>.</li>
+  </ol>
+  <h2 id="faq">Questions about solar in {{name}}</h2>
+  <details class="faq"><summary>Is solar worth it in {{name}}?</summary><p>{{verdict}} case. {{verdict_text}}</p></details>
+  <details class="faq"><summary>How much does a solar system cost in {{name}}?</summary><p>At about ${{cpw}} per watt before incentives, a {{size150}} kW system costs roughly {{cost150}}. Local quotes vary with roof, equipment and installer.</p></details>
+  <details class="faq"><summary>How many panels would a {{name}} home need?</summary><p>For a $150 monthly bill, about {{size150}} kW, or roughly 2.3 panels per kW using 430 W panels. Use the <a href="../tools/system-size.html">system size calculator</a> for your exact usage.</p></details>
+  <h2 id="similar">States with similar power prices</h2>
+  <p>{{neighbors}}</p>
+ </article>
+ <aside class="side"><div class="sticky">
+  <div class="panel sunny"><h3 class="mt0">Real quotes for {{name}}</h3><p>Compare up to three vetted local installers. Free, and email-only if you prefer.</p><a class="btn ink" href="../quotes.html?state={{code}}">Compare quotes</a></div>
+  <div class="panel"><h3 class="mt0">At a glance</h3><ul class="mb0" style="padding-left:1.1em;margin:0"><li>Power: {{rate}}¢/kWh</li><li>Sun: {{sun}} h/day</li><li>Typical system: {{size150}} kW</li><li>Payback: {{payback150}} yrs</li><li>Rank: #{{rank}} of 51</li></ul></div>
+  {{ad:top}}
+ </div></aside>
+</div>

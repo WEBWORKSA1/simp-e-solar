@@ -1,0 +1,26 @@
+<!--meta
+full_title: Solar by State 2026: Electricity Prices, Sun Hours and Payback | Simple.solar
+description: Compare solar in all 50 states and DC: residential electricity price, peak sun hours, typical system size, first-year savings and payback for a $150 monthly bill.
+-->
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / Solar by state</p>
+ <h1>Solar by state</h1>
+ <p class="lede">Two numbers decide most of the math: what you pay for power and how much sun you get. Here's every state, ranked by payback for a home with a $150 monthly bill.</p>
+</div>
+<div class="wrap" style="padding-bottom:20px">
+ <label class="hide" for="table-filter">Filter states</label>
+ <input id="table-filter" class="search-in" type="search" placeholder="Filter, for example Texas" style="margin-bottom:14px">
+ <div class="table-wrap"><table class="data" id="state-table" data-sortable>
+  <thead><tr><th data-sort>State</th><th class="num" data-sort>Power price</th><th class="num" data-sort>Sun hours</th><th class="num" data-sort>System size</th><th class="num" data-sort>Year-1 savings</th><th class="num" data-sort>Payback</th><th class="num" data-sort>Rank</th></tr></thead>
+  <tbody>{{rows}}</tbody>
+ </table></div>
+ <p class="fine" style="margin-top:10px">Select a column header to sort. Assumes a $150 monthly bill, 90% offset, ${{cpw}} per watt installed, no tax credit, 3% yearly power price rise. Power prices: {{rate_src}}. Sunshine: {{sun_src}}.</p>
+</div>
+<div class="wrap">{{ad:inArticle}}</div>
+<section class="band paper"><div class="wrap read prose">
+ <h2 class="mt0">How to read this table</h2>
+ <p><b>Power price</b> matters most. Every kWh your panels make is worth what you'd otherwise pay, so a home in a 30¢ state earns twice as much per panel as one in a 15¢ state.</p>
+ <p><b>Sun hours</b> come second. A kW of panels in Arizona makes roughly 60% more energy than the same kW in Washington.</p>
+ <p><b>Export rules</b> are the hidden third factor. Some utilities credit exported power at the full retail rate; others pay much less. See <a href="../guides/net-metering-explained.html">net metering explained</a>.</p>
+ <p>Your result will differ. Run your own numbers in the <a href="../tools/savings-calculator.html">savings calculator</a>.</p>
+</div></section>
