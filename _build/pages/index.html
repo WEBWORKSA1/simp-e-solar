@@ -1,0 +1,132 @@
+<!--meta
+full_title: Simple.solar — Is Solar Worth It? Honest Numbers in 60 Seconds
+description: Find out in 60 seconds if solar is worth it for your home. Free savings calculator, plain-English guides, state-by-state numbers and up to 3 vetted installer quotes.
+nav:
+scripts: data.js,tools.js
+-->
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <h1>Solar, without the sales pitch.</h1>
+   <p class="lede">Move the slider to see what solar could save you, in plain numbers. Then compare real quotes, or pick a simpler option like plug-in panels or a portable power station.</p>
+   <div style="display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 18px">
+    <a class="btn sun" id="hero-go" data-base="quotes.html" href="quotes.html">Get my free quotes</a>
+    <a class="btn ghost" href="tools/solar-match.html">Which solar fits me?</a>
+   </div>
+   <ul class="trust"><li>Free, independent calculators</li><li>No calls unless you ask</li><li>Renters welcome</li></ul>
+  </div>
+  <div class="calc-card" id="sun-arc">
+   <div class="arc-wrap">
+    <svg viewBox="0 0 400 228" role="img" aria-labelledby="arc-title">
+     <title id="arc-title">Share of your yearly electric bill solar could cover</title>
+     <path d="M30 206 A170 170 0 0 1 370 206" fill="none" stroke="var(--line)" stroke-width="16" stroke-linecap="round"/>
+     <path id="arc-fill" d="M30 206 A170 170 0 0 1 370 206" fill="none" stroke="#FFC23D" stroke-width="16" stroke-linecap="round" style="transition:stroke-dashoffset .35s ease"/>
+     <circle id="arc-sun" cx="30" cy="206" r="15" fill="#FFC23D" stroke="var(--card)" stroke-width="5"/>
+     <line x1="8" y1="222" x2="392" y2="222" stroke="var(--line)" stroke-width="2"/>
+    </svg>
+    <div class="arc-readout"><div class="big" id="hero-total">$0</div><div class="small" id="hero-sub">estimated 25-year net savings</div></div>
+   </div>
+   <div class="ctrl"><label for="hero-bill">Monthly electric bill <output id="hero-bill-out">$150</output></label><input id="hero-bill" type="range" min="40" max="500" step="10" value="150"></div>
+   <div class="ctrl"><label for="hero-state">Where you live</label>
+    <select id="hero-state" class="search-in" style="max-width:none;border-radius:var(--r-sm)"></select></div>
+   <ul class="calc-facts">
+    <li><b id="hero-size">—</b>System size</li>
+    <li><b id="hero-pay">—</b>Payback</li>
+    <li><b id="hero-cover">—</b>Of bill covered</li>
+   </ul>
+   <p class="fine mb0">Estimate assumes a sunny, unshaded roof, today's typical installed price and no tax credit. <a href="tools/savings-calculator.html">Adjust every assumption</a>.</p>
+  </div>
+ </div>
+</section>
+
+<div class="wrap">{{ad:top}}</div>
+
+<section class="band">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Three ways to go solar</h2><p>Most sites only sell rooftop systems. Pick the road that fits your home, budget and lease.</p></div>
+  <div class="roads">
+   <div class="road">{{icon:roof}}<h3 class="mb0">Rooftop solar</h3><p class="meta">For homeowners. Biggest savings, biggest decision. Typical systems run 6–10 kW.</p><p>Best when you own a sunny roof, pay $100+ a month and plan to stay 7+ years.</p><a class="more" href="guides/is-solar-worth-it.html">Is it worth it for me?</a></div>
+   <div class="road">{{icon:plug}}<h3 class="mb0">Plug-in and balcony</h3><p class="meta">For renters and small budgets. One or two panels that plug into an outlet.</p><p>Costs hundreds, not thousands. Check whether your state allows it first.</p><a class="more" href="guides/plug-in-balcony-solar.html">How plug-in solar works</a></div>
+   <div class="road">{{icon:battery}}<h3 class="mb0">Batteries and portable</h3><p class="meta">For outages, RVs, cabins and camping. Power that goes where you go.</p><p>Size it by what you need to run, not by the biggest number on the box.</p><a class="more" href="tools/power-station.html">Size a power station</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="band paper">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Free solar calculators</h2><p>Every tool runs in your browser. Nothing you type is stored or sent anywhere.</p></div>
+  <div class="grid-3">
+   <a class="tool" href="tools/savings-calculator.html">{{icon:money}}<strong>Savings and payback</strong><span>Cost, yearly savings, payback and 25-year profit with every assumption editable.</span></a>
+   <a class="tool" href="tools/system-size.html">{{icon:panel}}<strong>System size</strong><span>How many kW and panels you need from your bill or kWh usage.</span></a>
+   <a class="tool" href="tools/battery-sizer.html">{{icon:battery}}<strong>Battery backup sizer</strong><span>Pick what to keep running in an outage and see the kWh you need.</span></a>
+   <a class="tool" href="tools/power-station.html">{{icon:calc}}<strong>Power station runtime</strong><span>What a portable power station will actually run, and for how long.</span></a>
+   <a class="tool" href="tools/plug-in-solar.html">{{icon:plugsmall}}<strong>Plug-in solar savings</strong><span>What a 400–1,200 W balcony or plug-in kit could save in your state.</span></a>
+   <a class="tool" href="tools/solar-match.html">{{icon:match}}<strong>Which solar fits me?</strong><span>Five quick questions point you to rooftop, plug-in, battery, portable or community solar.</span></a>
+  </div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap">
+  <div class="lead-band">
+   <div>
+    <h2>Compare up to 3 local installer quotes</h2>
+    <p>Quotes for the same home can differ by thousands of dollars. Getting three is the single easiest way to save.</p>
+    <ul><li>Six quick questions, about one minute</li><li>See your estimate before you share contact details</li><li>Choose email-only if you don't want calls</li><li>Free and no obligation</li></ul>
+   </div>
+   <div>{{lead_form}}</div>
+  </div>
+ </div>
+</section>
+
+<section class="band paper">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Start with these guides</h2><p>Short, honest answers to the questions people actually ask before going solar. <a href="guides/index.html">See all guides</a>.</p></div>
+  {{guide_list_8}}
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">How solar pays off where you live</h2><p>Electricity prices and sunshine decide most of the math. Choose your state for local numbers.</p></div>
+  {{state_grid}}
+ </div>
+</section>
+
+<div class="wrap">{{ad:inArticle}}</div>
+
+<section class="band paper">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Watch and learn</h2><p>Hand-picked explainers from engineers and educators. <a href="videos.html">Open the video library</a>.</p></div>
+  {{video_grid_small}}
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap grid-2" style="align-items:start">
+  <div>
+   <h2>How Simple.solar works</h2>
+   <ol class="prose" style="padding-left:1.2em">
+    <li><b>Check the numbers.</b> Our calculators use public electricity prices and sunshine data for your state.</li>
+    <li><b>Learn the trade-offs.</b> Plain-English guides cover cost, batteries, financing, and red flags in sales pitches.</li>
+    <li><b>Compare quotes if you want them.</b> Request up to three quotes from vetted local installers, or keep researching. Your choice.</li>
+   </ol>
+   <p class="muted">We're an independent publisher funded by advertising, partner referrals and reader support. That never changes our numbers. <a href="editorial-policy.html">Read our editorial policy</a>.</p>
+  </div>
+  <div>
+   <h2>Questions people ask first</h2>
+   <details class="faq"><summary>Is solar still worth it without the 30% federal tax credit?</summary><p>Often, yes. The US homeowner tax credit ended for systems installed after 2025, which stretches payback by a few years. In states with high electricity prices and decent sun, many systems still pay for themselves in 8 to 12 years and keep saving for 25+. Run your own numbers in the <a href="tools/savings-calculator.html">savings calculator</a>.</p></details>
+   <details class="faq"><summary>Can I go solar if I rent?</summary><p>Yes. Plug-in panels, community solar subscriptions and portable power stations don't need a roof you own. See <a href="guides/solar-for-renters.html">solar for renters</a>.</p></details>
+   <details class="faq"><summary>Do solar panels work during a power outage?</summary><p>Standard grid-tied systems shut off during an outage for the safety of utility workers. To keep power on you need a battery or a system designed to island. See <a href="guides/power-outage-backup.html">outage backup options</a>.</p></details>
+   <details class="faq"><summary>How long do solar panels last?</summary><p>Most panels carry 25 to 30 year warranties and lose roughly 0.25% to 0.5% of output per year. Inverters usually need replacing once, around year 10 to 15.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="band paper">
+ <div class="wrap grid-3">
+  <div class="panel"><h3>Support the site</h3><p>Keep the calculators free and ad-light. Chip in once or monthly.</p><a class="btn ink small" href="support.html">Support Simple.solar</a></div>
+  <div class="panel"><h3>Enter the contests</h3><p>Share your setup, your best tip or your savings story. Win solar gear and gift cards.</p><a class="btn ink small" href="contests.html">See current contests</a></div>
+  <div class="panel"><h3>Work with us</h3><p>Installers, brands and writers: get leads, reach readers or join the team.</p><a class="btn ink small" href="advertise.html">Partner with us</a></div>
+ </div>
+</section>
