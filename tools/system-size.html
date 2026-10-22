@@ -1,0 +1,49 @@
+---
+layout: "default"
+title: "How Many Solar Panels Do I Need? System Size Calculator | Simple.solar"
+description: "Calculate the solar system size and number of panels you need from your electric bill or kWh usage, sun hours and panel wattage. Free and instant."
+canon: "https://simple.solar/tools/system-size.html"
+r: "../"
+nav: "tools"
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Solar System Size Calculator \u2014 How Many Panels Do I Need?\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Any\", \"offers\": {\"@type\": \"Offer\", \"price\": \"0\", \"priceCurrency\": \"USD\"}, \"url\": \"https://simple.solar/tools/system-size.html\"}</script>\n"
+scripts: "<script src=\"../assets/js/data.js\"></script>\n<script src=\"../assets/js/tools.js\"></script>\n"
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Calculators</a> / System size</p>
+ <h1>How many solar panels do I need?</h1>
+ <p class="lede">Work out system size in kilowatts, the number of panels, and roughly how much roof they'll take.</p>
+</div>
+<div class="wrap tool-grid">
+ <form class="form panel" id="size-calc" onsubmit="return false">
+  <div><label for="sz-state">State</label><select id="sz-state" name="state"></select></div>
+  <div><label for="sz-mode">I know my</label><select id="sz-mode" name="mode"><option value="bill">Monthly bill in dollars</option><option value="kwh">Monthly usage in kWh</option></select></div>
+  <div class="mode-bill"><label for="sz-bill">Monthly bill ($)</label><input id="sz-bill" name="bill" type="number" min="10" value="150"></div>
+  <div class="mode-kwh" hidden><label for="sz-kwh">Monthly usage (kWh)</label><input id="sz-kwh" name="kwh" type="number" min="50" value="880"></div>
+  <div class="row">
+   <div><label for="sz-sun">Peak sun hours</label><input id="sz-sun" name="sunh" type="number" min="1" max="8" step="0.1" placeholder="5.0"></div>
+   <div><label for="sz-pw">Panel watts</label><select id="sz-pw" name="pw"><option>370</option><option>400</option><option selected>430</option><option>460</option></select></div>
+  </div>
+  <div class="row">
+   <div><label for="sz-offset">Offset target (%)</label><input id="sz-offset" name="offset" type="number" min="20" max="120" value="100"></div>
+   <div><label for="sz-loss">System losses (%)</label><input id="sz-loss" name="loss" type="number" min="5" max="35" value="22"></div>
+  </div>
+  <p class="fine mb0">Leave sun hours blank to use your state's average. 22% losses is a realistic default.</p>
+ </form>
+ <div class="result" aria-live="polite">
+  <div class="kpis">
+   <div class="kpi"><b id="sz-kw">—</b><span>System size</span></div>
+   <div class="kpi"><b id="sz-panels">—</b><span>Panels</span></div>
+   <div class="kpi"><b id="sz-area">—</b><span>Roof area (approx.)</span></div>
+   <div class="kpi"><b id="sz-kwh">—</b><span>Yearly usage covered</span></div>
+  </div>
+  <div class="prose">
+   <h3>The formula</h3>
+   <p><b>System kW = yearly kWh × offset ÷ (sun hours × 365 × (1 − losses))</b></p>
+   <p>Example: 10,560 kWh a year in a 5-hour state with 22% losses needs 10,560 ÷ (5 × 365 × 0.78) = 7.4 kW, or about 18 panels at 430 W.</p>
+   <p>Each modern panel takes roughly 21 to 22 square feet. Leave space for fire-code setbacks at roof edges and ridges.</p>
+  </div>
+  <a class="btn sun" href="../quotes.html">Get quotes for this size</a>
+ </div>
+</div>
+<div class="wrap"><div class="ad-slot" data-slot="bottom"></div></div>
