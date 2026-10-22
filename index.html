@@ -1,0 +1,221 @@
+---
+layout: "default"
+title: "Simple.solar \u2014 Is Solar Worth It? Honest Numbers in 60 Seconds"
+description: "Find out in 60 seconds if solar is worth it for your home. Free savings calculator, plain-English guides, state-by-state numbers and up to 3 vetted installer quotes."
+canon: "https://simple.solar/"
+r: ""
+nav: ""
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"name\": \"Simple.solar\", \"url\": \"https://simple.solar\", \"logo\": \"https://simple.solar/assets/img/favicon.svg\"}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebSite\", \"name\": \"Simple.solar\", \"url\": \"https://simple.solar\"}</script>\n"
+scripts: "<script src=\"assets/js/data.js\"></script>\n<script src=\"assets/js/tools.js\"></script>\n"
+---
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <h1>Solar, without the sales pitch.</h1>
+   <p class="lede">Move the slider to see what solar could save you, in plain numbers. Then compare real quotes, or pick a simpler option like plug-in panels or a portable power station.</p>
+   <div style="display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 18px">
+    <a class="btn sun" id="hero-go" data-base="quotes.html" href="quotes.html">Get my free quotes</a>
+    <a class="btn ghost" href="tools/solar-match.html">Which solar fits me?</a>
+   </div>
+   <ul class="trust"><li>Free, independent calculators</li><li>No calls unless you ask</li><li>Renters welcome</li></ul>
+  </div>
+  <div class="calc-card" id="sun-arc">
+   <div class="arc-wrap">
+    <svg viewBox="0 0 400 228" role="img" aria-labelledby="arc-title">
+     <title id="arc-title">Share of your yearly electric bill solar could cover</title>
+     <path d="M30 206 A170 170 0 0 1 370 206" fill="none" stroke="var(--line)" stroke-width="16" stroke-linecap="round"/>
+     <path id="arc-fill" d="M30 206 A170 170 0 0 1 370 206" fill="none" stroke="#FFC23D" stroke-width="16" stroke-linecap="round" style="transition:stroke-dashoffset .35s ease"/>
+     <circle id="arc-sun" cx="30" cy="206" r="15" fill="#FFC23D" stroke="var(--card)" stroke-width="5"/>
+     <line x1="8" y1="222" x2="392" y2="222" stroke="var(--line)" stroke-width="2"/>
+    </svg>
+    <div class="arc-readout"><div class="big" id="hero-total">$0</div><div class="small" id="hero-sub">estimated 25-year net savings</div></div>
+   </div>
+   <div class="ctrl"><label for="hero-bill">Monthly electric bill <output id="hero-bill-out">$150</output></label><input id="hero-bill" type="range" min="40" max="500" step="10" value="150"></div>
+   <div class="ctrl"><label for="hero-state">Where you live</label>
+    <select id="hero-state" class="search-in" style="max-width:none;border-radius:var(--r-sm)"></select></div>
+   <ul class="calc-facts">
+    <li><b id="hero-size">—</b>System size</li>
+    <li><b id="hero-pay">—</b>Payback</li>
+    <li><b id="hero-cover">—</b>Of bill covered</li>
+   </ul>
+   <p class="fine mb0">Estimate assumes a sunny, unshaded roof, today's typical installed price and no tax credit. <a href="tools/savings-calculator.html">Adjust every assumption</a>.</p>
+  </div>
+ </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-slot="top"></div></div>
+
+<section class="band">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Three ways to go solar</h2><p>Most sites only sell rooftop systems. Pick the road that fits your home, budget and lease.</p></div>
+  <div class="roads">
+   <div class="road"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><path d="M6 32 32 10l26 22"/><path d="M12 28v26h40V28"/><path d="M20 22l12-9 12 9v7H20z" fill="#FFC23D" stroke="currentColor"/><path d="M26 54V40h12v14"/></svg><h3 class="mb0">Rooftop solar</h3><p class="meta">For homeowners. Biggest savings, biggest decision. Typical systems run 6–10 kW.</p><p>Best when you own a sunny roof, pay $100+ a month and plan to stay 7+ years.</p><a class="more" href="guides/is-solar-worth-it.html">Is it worth it for me?</a></div>
+   <div class="road"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="8" y="8" width="30" height="40" rx="3" fill="#FFC23D"/><path d="M8 21h30M8 34h30M23 8v40"/><path d="M38 40h8a8 8 0 0 1 8 8v8"/><path d="M50 56h8"/></svg><h3 class="mb0">Plug-in and balcony</h3><p class="meta">For renters and small budgets. One or two panels that plug into an outlet.</p><p>Costs hundreds, not thousands. Check whether your state allows it first.</p><a class="more" href="guides/plug-in-balcony-solar.html">How plug-in solar works</a></div>
+   <div class="road"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="14" width="40" height="40" rx="5"/><path d="M22 8h16v6H22z"/><path d="M33 22 24 37h9l-3 11 10-16h-9l3-10z" fill="#FFC23D"/></svg><h3 class="mb0">Batteries and portable</h3><p class="meta">For outages, RVs, cabins and camping. Power that goes where you go.</p><p>Size it by what you need to run, not by the biggest number on the box.</p><a class="more" href="tools/power-station.html">Size a power station</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="band paper">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Free solar calculators</h2><p>Every tool runs in your browser. Nothing you type is stored or sent anywhere.</p></div>
+  <div class="grid-3">
+   <a class="tool" href="tools/savings-calculator.html"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="40" height="24" rx="4"/><circle cx="24" cy="24" r="6" fill="#FFC23D"/><path d="M10 18h.01M38 30h.01" stroke-width="4" stroke-linecap="round"/></svg><strong>Savings and payback</strong><span>Cost, yearly savings, payback and 25-year profit with every assumption editable.</span></a>
+   <a class="tool" href="tools/system-size.html"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h32l-4 22H4z" fill="#FFC23D"/><path d="M6 21h32M14 10l-3 22M26 10l-2 22M20 32v8M12 40h16"/></svg><strong>System size</strong><span>How many kW and panels you need from your bill or kWh usage.</span></a>
+   <a class="tool" href="tools/battery-sizer.html"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="14" width="40" height="40" rx="5"/><path d="M22 8h16v6H22z"/><path d="M33 22 24 37h9l-3 11 10-16h-9l3-10z" fill="#FFC23D"/></svg><strong>Battery backup sizer</strong><span>Pick what to keep running in an outage and see the kWh you need.</span></a>
+   <a class="tool" href="tools/power-station.html"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><rect x="9" y="5" width="30" height="38" rx="4"/><rect x="14" y="10" width="20" height="8" rx="1.5" fill="#FFC23D"/><path d="M16 25h.01M24 25h.01M32 25h.01M16 32h.01M24 32h.01M32 32h.01M16 38h.01M24 38h.01" stroke-width="4" stroke-linecap="round"/></svg><strong>Power station runtime</strong><span>What a portable power station will actually run, and for how long.</span></a>
+   <a class="tool" href="tools/plug-in-solar.html"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="22" height="28" rx="2" fill="#FFC23D"/><path d="M6 20h22M17 6v28"/><path d="M28 30h6a6 6 0 0 1 6 6v6"/></svg><strong>Plug-in solar savings</strong><span>What a 400–1,200 W balcony or plug-in kit could save in your state.</span></a>
+   <a class="tool" href="tools/solar-match.html"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="10" fill="#FFC23D"/><circle cx="24" cy="24" r="3" fill="currentColor"/></svg><strong>Which solar fits me?</strong><span>Five quick questions point you to rooftop, plug-in, battery, portable or community solar.</span></a>
+  </div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap">
+  <div class="lead-band">
+   <div>
+    <h2>Compare up to 3 local installer quotes</h2>
+    <p>Quotes for the same home can differ by thousands of dollars. Getting three is the single easiest way to save.</p>
+    <ul><li>Six quick questions, about one minute</li><li>See your estimate before you share contact details</li><li>Choose email-only if you don't want calls</li><li>Free and no obligation</li></ul>
+   </div>
+   <div><form class="form lead-shell" id="lead-form" data-form="Solar quote request" data-steps data-redirect="thank-you.html" novalidate>
+ <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+ <div class="steps-bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+ <p class="fine mb0" data-step-count aria-live="polite">Step 1 of 6</p>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0">
+  <legend class="step-q">Where is the home?</legend>
+  <p class="muted">Prices, sunshine and incentives depend on location.</p>
+  <div class="row">
+   <div><label for="lf-zip">ZIP or postal code</label><input id="lf-zip" name="zip" inputmode="text" autocomplete="postal-code" required maxlength="10" placeholder="e.g. 85004"></div>
+   <div><label for="lf-state">State or region</label><select id="lf-state" name="state" required><option value="">Choose…</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="DC">Washington, DC</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="CA-ON">Canada — Ontario</option><option value="CA-OTHER">Canada — other province</option><option value="OTHER">Outside the US and Canada</option></select></div>
+  </div>
+  <div class="step-nav"><span></span><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">Do you own or rent?</legend>
+  <div class="choices" data-need-one data-autonext>
+   <label><input type="radio" name="ownership" value="Own"><span>I own it<small>House, townhouse or farm</small></span></label>
+   <label><input type="radio" name="ownership" value="Rent"><span>I rent<small>We'll show renter options</small></span></label>
+   <label><input type="radio" name="ownership" value="Buying soon"><span>Buying soon<small>Planning ahead</small></span></label>
+   <label><input type="radio" name="ownership" value="Business"><span>A business<small>Commercial property</small></span></label>
+  </div>
+  <p class="note" id="renter-note" hidden>Renting? Rooftop installers usually need the owner's approval. We'll also send you plug-in and community solar options, which don't need a roof. Or <a href="guides/solar-for-renters.html">read the renter's guide</a>.</p>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">What's your average monthly electric bill?</legend>
+  <div class="ctrl"><label for="lf-bill">Monthly bill <output id="lf-bill-out">$150</output></label>
+   <input id="lf-bill" name="bill" type="range" min="30" max="600" step="10" value="150"></div>
+  <p class="fine">Not sure? Most US homes pay between $120 and $200.</p>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">How much sun does your roof get?</legend>
+  <div class="choices" data-need-one data-autonext>
+   <label><input type="radio" name="sun" value="Full sun"><span>Full sun<small>Little or no shade</small></span></label>
+   <label><input type="radio" name="sun" value="Some shade"><span>Some shade<small>Trees part of the day</small></span></label>
+   <label><input type="radio" name="sun" value="Heavy shade"><span>Heavy shade<small>Mostly shaded</small></span></label>
+   <label><input type="radio" name="sun" value="Not sure"><span>Not sure<small>An installer will check</small></span></label>
+  </div>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">What are you interested in?</legend>
+  <div class="choices" data-need-one>
+   <label><input type="radio" name="interest" value="Solar panels"><span>Solar panels</span></label>
+   <label><input type="radio" name="interest" value="Solar + battery"><span>Solar + battery</span></label>
+   <label><input type="radio" name="interest" value="Battery only"><span>Battery backup only</span></label>
+   <label><input type="radio" name="interest" value="Plug-in or portable"><span>Plug-in or portable</span></label>
+  </div>
+  <div class="row">
+   <div><label for="lf-when">When would you like it installed?</label><select id="lf-when" name="timeline"><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Just researching</option></select></div>
+   <div><label for="lf-pay">How would you prefer to pay?</label><select id="lf-pay" name="payment"><option>Not sure yet</option><option>Cash</option><option>Loan</option><option>Lease or PPA</option></select></div>
+  </div>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>See my estimate</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">Your estimate is ready</legend>
+  <div class="kpis" id="lf-preview" aria-live="polite">
+   <div class="kpi"><b data-p="size">—</b><span>Suggested system</span></div>
+   <div class="kpi good"><b data-p="save">—</b><span>First-year savings</span></div>
+   <div class="kpi"><b data-p="payback">—</b><span>Estimated payback</span></div>
+  </div>
+  <p class="fine">Where should we send the full breakdown and up to three local quotes?</p>
+  <div class="row">
+   <div><label for="lf-name">Full name</label><input id="lf-name" name="name" required autocomplete="name"></div>
+   <div><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" required autocomplete="email"></div>
+  </div>
+  <div class="row">
+   <div><label for="lf-phone">Phone <span class="muted">(optional)</span></label><input id="lf-phone" name="phone" type="tel" autocomplete="tel"></div>
+   <div><label for="lf-contact">Who may contact you?</label><select id="lf-contact" name="contact_pref"><option>Up to 3 vetted installers</option><option>1 installer only</option><option>Email only — no calls</option></select></div>
+  </div>
+  <label class="check"><input type="checkbox" name="consent" value="Yes" required> I agree that Simple.solar and up to three matched solar companies may contact me about my request by email, phone or text, including by automated means. Consent is not a condition of any purchase. I can opt out at any time. See the <a href="privacy.html">privacy policy</a>.</label>
+  <input type="hidden" name="estimate" value="">
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="submit" class="btn sun">Send my free quotes</button></div>
+ </fieldset>
+ <p class="form-status" aria-live="polite"></p>
+ <ul class="trust"><li>Free, no obligation</li><li>Shared with 3 companies at most</li><li>Email-only option</li><li>Unsubscribe any time</li></ul>
+</form>
+</div>
+  </div>
+ </div>
+</section>
+
+<section class="band paper">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Start with these guides</h2><p>Short, honest answers to the questions people actually ask before going solar. <a href="guides/index.html">See all guides</a>.</p></div>
+  <ul class="glist"><li><a href="guides/is-solar-worth-it.html"><strong>Is solar worth it in 2026? An honest answer</strong><span>Learn the six factors that decide if solar pays off, with worked payback math for California, Texas and Washington, plus when to skip it.</span><em>7 min</em></a></li><li><a href="guides/solar-cost.html"><strong>How much do solar panels cost in 2026?</strong><span>See 2026 solar prices per watt, total costs for 4 to 12 kW systems, where your money goes, battery prices and what pushes a quote up or down.</span><em>5 min</em></a></li><li><a href="guides/solar-incentives.html"><strong>Solar incentives in 2026: what&#x27;s left and where</strong><span>The US 30% homeowner credit is gone, but state credits, rebates, lease rules and programs in Canada, the UK, Australia and India still help.</span><em>7 min</em></a></li><li><a href="guides/plug-in-balcony-solar.html"><strong>Plug-in and balcony solar: the complete beginner&#x27;s guide</strong><span>How plug-in balcony solar works, what an 800 W kit really makes, safety basics, typical costs, and where it is legal in the US and Germany.</span><em>7 min</em></a></li><li><a href="guides/how-solar-works.html"><strong>How solar panels work, explained simply</strong><span>Learn how sunlight becomes electricity, what an inverter does, and how much power one panel really makes per day, with simple math you can follow.</span><em>7 min</em></a></li><li><a href="guides/home-batteries-explained.html"><strong>Home solar batteries explained: cost, size and when they pay</strong><span>How home batteries work, what kWh and kW mean, typical installed costs, how to size one, and when a battery actually makes financial sense.</span><em>7 min</em></a></li><li><a href="guides/solar-for-renters.html"><strong>Solar for renters: 5 ways to use solar without owning a roof</strong><span>Renting does not shut you out of solar. Compare community solar, plug-in panels, power stations, green plans and landlord deals by cost and effort.</span><em>7 min</em></a></li><li><a href="guides/portable-power-stations.html"><strong>Portable power stations: how to pick the right size</strong><span>How to size a portable power station using Wh capacity, continuous and surge watts, inverter losses and solar charge time, with worked examples.</span><em>7 min</em></a></li></ul>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">How solar pays off where you live</h2><p>Electricity prices and sunshine decide most of the math. Choose your state for local numbers.</p></div>
+  <div class="state-grid"><a href="states/alabama.html"><span>Alabama</span><small>16¢</small></a><a href="states/alaska.html"><span>Alaska</span><small>29¢</small></a><a href="states/arizona.html"><span>Arizona</span><small>15¢</small></a><a href="states/arkansas.html"><span>Arkansas</span><small>14¢</small></a><a href="states/california.html"><span>California</span><small>34¢</small></a><a href="states/colorado.html"><span>Colorado</span><small>17¢</small></a><a href="states/connecticut.html"><span>Connecticut</span><small>24¢</small></a><a href="states/delaware.html"><span>Delaware</span><small>18¢</small></a><a href="states/florida.html"><span>Florida</span><small>15¢</small></a><a href="states/georgia.html"><span>Georgia</span><small>16¢</small></a><a href="states/hawaii.html"><span>Hawaii</span><small>48¢</small></a><a href="states/idaho.html"><span>Idaho</span><small>14¢</small></a><a href="states/illinois.html"><span>Illinois</span><small>19¢</small></a><a href="states/indiana.html"><span>Indiana</span><small>17¢</small></a><a href="states/iowa.html"><span>Iowa</span><small>16¢</small></a><a href="states/kansas.html"><span>Kansas</span><small>15¢</small></a><a href="states/kentucky.html"><span>Kentucky</span><small>14¢</small></a><a href="states/louisiana.html"><span>Louisiana</span><small>13¢</small></a><a href="states/maine.html"><span>Maine</span><small>32¢</small></a><a href="states/maryland.html"><span>Maryland</span><small>21¢</small></a><a href="states/massachusetts.html"><span>Massachusetts</span><small>30¢</small></a><a href="states/michigan.html"><span>Michigan</span><small>23¢</small></a><a href="states/minnesota.html"><span>Minnesota</span><small>17¢</small></a><a href="states/mississippi.html"><span>Mississippi</span><small>14¢</small></a><a href="states/missouri.html"><span>Missouri</span><small>16¢</small></a><a href="states/montana.html"><span>Montana</span><small>15¢</small></a><a href="states/nebraska.html"><span>Nebraska</span><small>14¢</small></a><a href="states/nevada.html"><span>Nevada</span><small>13¢</small></a><a href="states/new-hampshire.html"><span>New Hampshire</span><small>27¢</small></a><a href="states/new-jersey.html"><span>New Jersey</span><small>25¢</small></a><a href="states/new-mexico.html"><span>New Mexico</span><small>16¢</small></a><a href="states/new-york.html"><span>New York</span><small>30¢</small></a><a href="states/north-carolina.html"><span>North Carolina</span><small>15¢</small></a><a href="states/north-dakota.html"><span>North Dakota</span><small>13¢</small></a><a href="states/ohio.html"><span>Ohio</span><small>19¢</small></a><a href="states/oklahoma.html"><span>Oklahoma</span><small>14¢</small></a><a href="states/oregon.html"><span>Oregon</span><small>16¢</small></a><a href="states/pennsylvania.html"><span>Pennsylvania</span><small>22¢</small></a><a href="states/rhode-island.html"><span>Rhode Island</span><small>28¢</small></a><a href="states/south-carolina.html"><span>South Carolina</span><small>16¢</small></a><a href="states/south-dakota.html"><span>South Dakota</span><small>15¢</small></a><a href="states/tennessee.html"><span>Tennessee</span><small>14¢</small></a><a href="states/texas.html"><span>Texas</span><small>16¢</small></a><a href="states/utah.html"><span>Utah</span><small>13¢</small></a><a href="states/vermont.html"><span>Vermont</span><small>24¢</small></a><a href="states/virginia.html"><span>Virginia</span><small>18¢</small></a><a href="states/washington.html"><span>Washington</span><small>15¢</small></a><a href="states/washington-dc.html"><span>Washington, DC</span><small>25¢</small></a><a href="states/west-virginia.html"><span>West Virginia</span><small>16¢</small></a><a href="states/wisconsin.html"><span>Wisconsin</span><small>19¢</small></a><a href="states/wyoming.html"><span>Wyoming</span><small>14¢</small></a></div>
+ </div>
+</section>
+
+<div class="wrap"><div class="ad-slot" data-slot="inArticle"></div></div>
+
+<section class="band paper">
+ <div class="wrap">
+  <div class="sec-head"><h2 class="mb0">Watch and learn</h2><p>Hand-picked explainers from engineers and educators. <a href="videos.html">Open the video library</a>.</p></div>
+  <div class="grid-3"><figure class="vid"><button class="yt" data-yt="xKxrkht7CpY" aria-label="Play: How do solar panels work?"></button><figcaption>How do solar panels work?<small>TED-Ed — the clearest five-minute start</small></figcaption></figure><figure class="vid"><button class="yt" data-yt="0elhIcPVtKE" aria-label="Play: Energy 101: Solar PV"></button><figcaption>Energy 101: Solar PV<small>U.S. Department of Energy — official, short primer</small></figcaption></figure><figure class="vid"><button class="yt" data-yt="TUGRWepCH90" aria-label="Play: Are solar panels worth it?"></button><figcaption>Are solar panels worth it?<small>Undecided with Matt Ferrell — real bills from a real home</small></figcaption></figure></div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap grid-2" style="align-items:start">
+  <div>
+   <h2>How Simple.solar works</h2>
+   <ol class="prose" style="padding-left:1.2em">
+    <li><b>Check the numbers.</b> Our calculators use public electricity prices and sunshine data for your state.</li>
+    <li><b>Learn the trade-offs.</b> Plain-English guides cover cost, batteries, financing, and red flags in sales pitches.</li>
+    <li><b>Compare quotes if you want them.</b> Request up to three quotes from vetted local installers, or keep researching. Your choice.</li>
+   </ol>
+   <p class="muted">We're an independent publisher funded by advertising, partner referrals and reader support. That never changes our numbers. <a href="editorial-policy.html">Read our editorial policy</a>.</p>
+  </div>
+  <div>
+   <h2>Questions people ask first</h2>
+   <details class="faq"><summary>Is solar still worth it without the 30% federal tax credit?</summary><p>Often, yes. The US homeowner tax credit ended for systems installed after 2025, which stretches payback by a few years. In states with high electricity prices and decent sun, many systems still pay for themselves in 8 to 12 years and keep saving for 25+. Run your own numbers in the <a href="tools/savings-calculator.html">savings calculator</a>.</p></details>
+   <details class="faq"><summary>Can I go solar if I rent?</summary><p>Yes. Plug-in panels, community solar subscriptions and portable power stations don't need a roof you own. See <a href="guides/solar-for-renters.html">solar for renters</a>.</p></details>
+   <details class="faq"><summary>Do solar panels work during a power outage?</summary><p>Standard grid-tied systems shut off during an outage for the safety of utility workers. To keep power on you need a battery or a system designed to island. See <a href="guides/power-outage-backup.html">outage backup options</a>.</p></details>
+   <details class="faq"><summary>How long do solar panels last?</summary><p>Most panels carry 25 to 30 year warranties and lose roughly 0.25% to 0.5% of output per year. Inverters usually need replacing once, around year 10 to 15.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="band paper">
+ <div class="wrap grid-3">
+  <div class="panel"><h3>Support the site</h3><p>Keep the calculators free and ad-light. Chip in once or monthly.</p><a class="btn ink small" href="support.html">Support Simple.solar</a></div>
+  <div class="panel"><h3>Enter the contests</h3><p>Share your setup, your best tip or your savings story. Win solar gear and gift cards.</p><a class="btn ink small" href="contests.html">See current contests</a></div>
+  <div class="panel"><h3>Work with us</h3><p>Installers, brands and writers: get leads, reach readers or join the team.</p><a class="btn ink small" href="advertise.html">Partner with us</a></div>
+ </div>
+</section>
