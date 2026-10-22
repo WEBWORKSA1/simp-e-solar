@@ -1,0 +1,41 @@
+---
+layout: "default"
+title: "Portable Power Station Calculator: Runtime and Size | Simple.solar"
+description: "How long will a portable power station run your fridge, router or CPAP-type device? Calculate runtime, the right capacity and solar recharge time. Brand-neutral."
+canon: "https://simple.solar/tools/power-station.html"
+r: "../"
+nav: "tools"
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Portable Power Station Runtime Calculator\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Any\", \"offers\": {\"@type\": \"Offer\", \"price\": \"0\", \"priceCurrency\": \"USD\"}, \"url\": \"https://simple.solar/tools/power-station.html\"}</script>\n"
+scripts: "<script src=\"../assets/js/data.js\"></script>\n<script src=\"../assets/js/tools.js\"></script>\n"
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Calculators</a> / Power station</p>
+ <h1>Portable power station calculator</h1>
+ <p class="lede">What will it actually run, and for how long? Works for any brand. Add your devices, choose a capacity and see runtime and solar recharge time.</p>
+</div>
+<div class="wrap tool-grid" id="station-calc">
+ <div class="panel form">
+  <h3 class="mt0">What you'll power</h3>
+  <div class="loadrow fine" aria-hidden="true"><span>Device</span><span>Watts</span><span>Hrs/day</span><span></span></div>
+  <div class="loadlist"></div>
+  <div class="row"><select class="preset" aria-label="Add a common device"></select><div style="display:flex;gap:8px"><button type="button" class="btn ghost small add-preset">Add</button><button type="button" class="btn ghost small add-custom">Custom</button></div></div>
+  <div class="ctrl"><label for="ps-cap">Power station capacity <output id="ps-cap-out">2,048 Wh</output></label><input id="ps-cap" name="cap" type="range" min="256" max="6144" step="128" value="2048"></div>
+  <div class="ctrl"><label for="ps-panel">Solar panel input <output id="ps-panel-out">400 W</output></label><input id="ps-panel" name="panel" type="range" min="0" max="2400" step="50" value="400"></div>
+  <div class="ctrl"><label for="ps-sunh">Sun hours per day <output id="ps-sun-out">5 h</output></label><input id="ps-sunh" name="sunh" type="range" min="1" max="7" step="0.5" value="5"></div>
+ </div>
+ <div class="result" aria-live="polite">
+  <div class="kpis">
+   <div class="kpi"><b id="ps-day">—</b><span>Daily energy use</span></div>
+   <div class="kpi good"><b id="ps-run">—</b><span>Runtime on battery alone</span></div>
+   <div class="kpi"><b id="ps-peak">—</b><span>Peak load if all on</span></div>
+   <div class="kpi"><b id="ps-rec">—</b><span>Capacity for one full day</span></div>
+   <div class="kpi"><b id="ps-solar">—</b><span>Solar harvest per day</span></div>
+   <div class="kpi"><b id="ps-charge">—</b><span>Full solar recharge</span></div>
+  </div>
+  <p class="note" id="ps-warn" hidden></p>
+  <div class="prose"><p>We assume 85% of rated capacity is usable after inverter losses and 75% real-world solar panel output. If your daily solar harvest is larger than your daily use, you can run indefinitely in good weather.</p>
+  <p>Read the <a href="../guides/portable-power-stations.html">power station buying guide</a> or <a href="../guides/rv-van-solar.html">RV and van solar</a>.</p></div>
+ </div>
+</div>
+<div class="wrap"><div class="ad-slot" data-slot="bottom"></div></div>

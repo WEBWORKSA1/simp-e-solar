@@ -1,0 +1,4 @@
+title: Simple.solar
+url: "https://simple.solar"
+exclude: [README.md, PROMPTS.md, RESEARCH.md, _build]
+include: [ads.txt, CNAME]

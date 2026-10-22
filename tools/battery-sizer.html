@@ -1,0 +1,42 @@
+---
+layout: "default"
+title: "Home Battery Size Calculator: How Many kWh for Backup? | Simple.solar"
+description: "Choose what you want to keep running in a power outage and see the battery capacity, power rating and rough cost you need. Free battery backup sizer."
+canon: "https://simple.solar/tools/battery-sizer.html"
+r: "../"
+nav: "tools"
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Home Battery Backup Sizer \u2014 How Many kWh Do I Need?\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Any\", \"offers\": {\"@type\": \"Offer\", \"price\": \"0\", \"priceCurrency\": \"USD\"}, \"url\": \"https://simple.solar/tools/battery-sizer.html\"}</script>\n"
+scripts: "<script src=\"../assets/js/data.js\"></script>\n<script src=\"../assets/js/tools.js\"></script>\n"
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Calculators</a> / Battery backup</p>
+ <h1>Home battery backup sizer</h1>
+ <p class="lede">List what you'd keep running in an outage. We'll total the energy and power you need and estimate cost.</p>
+</div>
+<div class="wrap tool-grid" id="battery-calc">
+ <div class="panel form">
+  <h3 class="mt0">Your essential loads</h3>
+  <div class="loadrow fine" aria-hidden="true"><span>Appliance</span><span>Watts</span><span>Hrs/day</span><span></span></div>
+  <div class="loadlist"></div>
+  <div class="row"><select class="preset" aria-label="Add a common appliance"></select><div style="display:flex;gap:8px"><button type="button" class="btn ghost small add-preset">Add</button><button type="button" class="btn ghost small add-custom">Custom</button></div></div>
+  <div class="ctrl"><label for="bt-days">Days of backup <output id="bt-days-out">1 day</output></label><input id="bt-days" name="days" type="range" min="0.5" max="3" step="0.5" value="1"></div>
+  <p class="fine mb0">Fridges and freezers cycle on and off, so we count them at about 40% of the time.</p>
+ </div>
+ <div class="result" aria-live="polite">
+  <div class="kpis">
+   <div class="kpi"><b id="bt-wh">—</b><span>Daily energy</span></div>
+   <div class="kpi good"><b id="bt-need">—</b><span>Battery capacity needed</span></div>
+   <div class="kpi"><b id="bt-kw">—</b><span>Power if all run at once</span></div>
+   <div class="kpi"><b id="bt-units">—</b><span>Typical units</span></div>
+   <div class="kpi"><b id="bt-cost">—</b><span>Rough installed cost</span></div>
+  </div>
+  <div class="prose">
+   <p>Capacity includes a 90% usable depth of discharge and 90% round-trip efficiency. With solar recharging during the day, a smaller battery often covers multi-day outages.</p>
+   <p>Big motor loads such as well pumps and central AC need a battery or inverter with enough surge rating. A licensed electrician should install a critical-loads panel or transfer switch.</p>
+   <p>Read: <a href="../guides/home-batteries-explained.html">home batteries explained</a> and <a href="../guides/power-outage-backup.html">outage backup options</a>.</p>
+  </div>
+  <a class="btn sun" href="../quotes.html?interest=Solar%20%2B%20battery">Get battery quotes</a>
+ </div>
+</div>
+<div class="wrap"><div class="ad-slot" data-slot="bottom"></div></div>

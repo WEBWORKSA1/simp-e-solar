@@ -1,0 +1,53 @@
+---
+layout: "default"
+title: "Which Solar Is Right for Me? Rooftop, Plug-in, Battery or Portable | Simple.solar"
+description: "Answer four quick questions to find the right kind of solar for your home: rooftop, plug-in balcony panels, a home battery, a portable power station, or community solar."
+canon: "https://simple.solar/tools/solar-match.html"
+r: "../"
+nav: "tools"
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Which Solar Is Right for Me? 4-Question Quiz\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Any\", \"offers\": {\"@type\": \"Offer\", \"price\": \"0\", \"priceCurrency\": \"USD\"}, \"url\": \"https://simple.solar/tools/solar-match.html\"}</script>\n"
+scripts: "<script src=\"../assets/js/data.js\"></script>\n<script src=\"../assets/js/tools.js\"></script>\n"
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Calculators</a> / Solar match</p>
+ <h1>Which solar fits me?</h1>
+ <p class="lede">Four questions. One clear recommendation, with the next step to take.</p>
+</div>
+<div class="wrap read" style="padding-bottom:40px">
+ <div class="lead-shell" id="match-quiz">
+  <p class="fine" id="qz-count" aria-live="polite"></p>
+  <div class="qstep" data-q="home"><p class="step-q">Where do you live?</p><div class="choices">
+   <button type="button" class="tier" data-a="house"><b style="font-size:1.1rem">A house I own</b><span>Including townhouses</span></button>
+   <button type="button" class="tier" data-a="rent"><b style="font-size:1.1rem">A home I rent</b><span>House or apartment</span></button>
+   <button type="button" class="tier" data-a="apartment"><b style="font-size:1.1rem">A condo or apartment I own</b><span>Shared roof</span></button>
+   <button type="button" class="tier" data-a="rv"><b style="font-size:1.1rem">An RV, van or boat</b><span>Power on the move</span></button>
+   <button type="button" class="tier" data-a="cabin"><b style="font-size:1.1rem">A cabin or off-grid land</b><span>No utility line</span></button>
+  </div></div>
+  <div class="qstep" data-q="goal" hidden><p class="step-q">What matters most?</p><div class="choices">
+   <button type="button" class="tier" data-a="save"><b style="font-size:1.1rem">Lower bills</b><span>Save money long term</span></button>
+   <button type="button" class="tier" data-a="backup"><b style="font-size:1.1rem">Backup power</b><span>Keep the lights on in outages</span></button>
+   <button type="button" class="tier" data-a="green"><b style="font-size:1.1rem">Cleaner energy</b><span>Cut my carbon footprint</span></button>
+  </div><p><button type="button" class="btn ghost small" data-qback>Back</button></p></div>
+  <div class="qstep" data-q="budget" hidden><p class="step-q">What could you spend up front?</p><div class="choices">
+   <button type="button" class="tier" data-a="low"><b style="font-size:1.1rem">Under $2,000</b></button>
+   <button type="button" class="tier" data-a="mid"><b style="font-size:1.1rem">$2,000–$15,000</b></button>
+   <button type="button" class="tier" data-a="high"><b style="font-size:1.1rem">$15,000+ or financing</b></button>
+  </div><p><button type="button" class="btn ghost small" data-qback>Back</button></p></div>
+  <div class="qstep" data-q="bill" hidden><p class="step-q">How big is your monthly electric bill?</p><div class="choices">
+   <button type="button" class="tier" data-a="small"><b style="font-size:1.1rem">Under $80</b></button>
+   <button type="button" class="tier" data-a="medium"><b style="font-size:1.1rem">$80–$200</b></button>
+   <button type="button" class="tier" data-a="large"><b style="font-size:1.1rem">Over $200</b></button>
+  </div><p><button type="button" class="btn ghost small" data-qback>Back</button></p></div>
+
+  <div class="qresult" data-r="rooftop" hidden><h2>Rooftop solar</h2><p>You own your roof and want long-term savings. A rooftop system offers the biggest payoff. In most states it pays back in 8 to 14 years and keeps producing for 25+.</p><p><a class="btn sun" href="../quotes.html">Compare 3 quotes</a> <a class="btn ghost" href="savings-calculator.html">Run the numbers</a></p></div>
+  <div class="qresult" data-r="plugin" hidden><h2>Plug-in or balcony solar</h2><p>A 400 to 1,200 W kit plugs into an outlet, costs hundreds rather than thousands, and moves with you. Check your state's rules first.</p><p><a class="btn sun" href="plug-in-solar.html">Plug-in calculator</a> <a class="btn ghost" href="../guides/plug-in-balcony-solar.html">Read the guide</a></p></div>
+  <div class="qresult" data-r="battery" hidden><h2>Solar plus a home battery</h2><p>For reliable outage backup, pair panels with a 10 to 15 kWh battery and a critical-loads panel. Batteries also pay off where exports earn little.</p><p><a class="btn sun" href="battery-sizer.html">Size a battery</a> <a class="btn ghost" href="../quotes.html?interest=Solar%20%2B%20battery">Get battery quotes</a></p></div>
+  <div class="qresult" data-r="station" hidden><h2>A portable power station</h2><p>No install, no permission needed. A 1 to 3 kWh station keeps a fridge, Wi-Fi and lights going through most outages, and folding panels recharge it.</p><p><a class="btn sun" href="power-station.html">Size a power station</a> <a class="btn ghost" href="../guides/portable-power-stations.html">Buying guide</a></p></div>
+  <div class="qresult" data-r="rv" hidden><h2>RV or van solar</h2><p>Size panels and a lithium battery to your daily watt-hours. Most part-time setups land between 200 and 600 W of panels.</p><p><a class="btn sun" href="../guides/rv-van-solar.html">RV and van sizing guide</a> <a class="btn ghost" href="power-station.html">Runtime calculator</a></p></div>
+  <div class="qresult" data-r="offgrid" hidden><h2>Off-grid solar</h2><p>Off-grid means designing for your darkest month, with enough battery for cloudy days and usually a generator backup.</p><p><a class="btn sun" href="../guides/off-grid-basics.html">Off-grid basics</a> <a class="btn ghost" href="battery-sizer.html">Battery sizer</a></p></div>
+  <div class="qresult" data-r="community" hidden><h2>Community solar</h2><p>Subscribe to a share of a local solar farm and get bill credits, often with 5 to 15% savings and no equipment.</p><p><a class="btn sun" href="../guides/solar-for-renters.html">How community solar works</a></p></div>
+  <p><button type="button" class="btn ghost small" id="qz-restart" hidden>Start over</button></p>
+ </div>
+</div>
+<div class="wrap"><div class="ad-slot" data-slot="bottom"></div></div>

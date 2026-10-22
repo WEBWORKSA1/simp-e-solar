@@ -1,0 +1,39 @@
+---
+layout: "default"
+title: "Plug-in and Balcony Solar Calculator: Savings and Payback | Simple.solar"
+description: "How much could a 400 to 1,200 W plug-in or balcony solar kit save you? Enter your state, kit size and price for yearly kWh, savings and payback."
+canon: "https://simple.solar/tools/plug-in-solar.html"
+r: "../"
+nav: "tools"
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Plug-in and Balcony Solar Calculator\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Any\", \"offers\": {\"@type\": \"Offer\", \"price\": \"0\", \"priceCurrency\": \"USD\"}, \"url\": \"https://simple.solar/tools/plug-in-solar.html\"}</script>\n"
+scripts: "<script src=\"../assets/js/data.js\"></script>\n<script src=\"../assets/js/tools.js\"></script>\n"
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Calculators</a> / Plug-in solar</p>
+ <h1>Plug-in and balcony solar calculator</h1>
+ <p class="lede">A small kit plugged into an outlet trims your bill without a roof install. See what it would make and save where you live.</p>
+</div>
+<div class="wrap tool-grid">
+ <form class="form panel" id="plugin-calc" onsubmit="return false">
+  <div><label for="pi-state">State</label><select id="pi-state" name="state"></select></div>
+  <div class="ctrl"><label for="pi-w">Kit size (inverter output) <output id="pi-w-out">800 W</output></label><input id="pi-w" name="watts" type="range" min="200" max="1200" step="100" value="800"></div>
+  <div><label for="pi-face">Where the panels face</label><select id="pi-face" name="face"><option value="1">South, tilted toward the sun</option><option value="0.8">East or west</option><option value="0.65">Vertical on a balcony railing, facing south</option><option value="0.45">Vertical, facing east or west</option></select></div>
+  <div class="ctrl"><label for="pi-cost">Kit price <output id="pi-cost-out">$700</output></label><input id="pi-cost" name="cost" type="range" min="200" max="2000" step="25" value="700"></div>
+  <div class="ctrl"><label for="pi-self">Share you use yourself <output id="pi-self-out">80%</output></label><input id="pi-self" name="self" type="range" min="40" max="100" step="5" value="80"></div>
+  <p class="fine mb0">Most plug-in kits don't get paid for exports, so solar power you don't use at the moment it's made is usually lost. Fridges, routers and other always-on devices soak up most of it.</p>
+ </form>
+ <div class="result" aria-live="polite">
+  <div class="kpis">
+   <div class="kpi"><b id="pi-kwh">—</b><span>Yearly production</span></div>
+   <div class="kpi good"><b id="pi-save">—</b><span>Yearly savings</span></div>
+   <div class="kpi"><b id="pi-pay">—</b><span>Payback</span></div>
+   <div class="kpi"><b id="pi-co2">—</b><span>Emissions avoided</span></div>
+  </div>
+  <div class="prose">
+   <p><b>Is it legal where I live?</b> As of October 2026, ten US states have plug-in solar laws: Utah, Maine, Virginia, Colorado, Maryland, Connecticut, New Hampshire, Vermont, New Jersey and California. Several take effect in 2027. Elsewhere, ask your utility first. Details by state are in the <a href="../guides/plug-in-balcony-solar.html">plug-in solar guide</a>.</p>
+   <p>Only buy certified equipment with anti-islanding protection, plug directly into a wall outlet (no extension cords), and don't exceed the circuit's rating.</p>
+  </div>
+ </div>
+</div>
+<div class="wrap"><div class="ad-slot" data-slot="bottom"></div></div>

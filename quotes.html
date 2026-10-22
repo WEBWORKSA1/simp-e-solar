@@ -1,0 +1,133 @@
+---
+layout: "default"
+title: "Compare Solar Quotes \u2014 Up to 3 Local Installers, Free | Simple.solar"
+description: "Get a free solar estimate in one minute, then compare quotes from up to three vetted local installers. Email-only option, no obligation, renters welcome."
+canon: "https://simple.solar/quotes.html"
+r: ""
+nav: "quotes"
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Is it really free?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Yes. You never pay Simple.solar anything. Like most quote services, we may receive a referral fee from installers, which keeps the site free. It doesn't change your price or our calculators.\"}}, {\"@type\": \"Question\", \"name\": \"Will I get a lot of phone calls?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. Your request is shared with no more than three companies, and you can choose one installer or email only. Every company must honor opt-out requests immediately.\"}}, {\"@type\": \"Question\", \"name\": \"How accurate is the instant estimate?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"It's a planning number based on your state's average electricity price and sunshine, a typical installed price per watt, and your bill. Real quotes account for your roof's angle, shade, local permits and equipment, so expect them to differ.\"}}, {\"@type\": \"Question\", \"name\": \"What makes an installer \\\"vetted\\\"?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Partners must hold the licenses your state requires, carry liability and workers' compensation insurance, offer a written workmanship warranty, and agree to our no-pressure sales standards. Complaints are reviewed, and partners who break the rules are removed.\"}}, {\"@type\": \"Question\", \"name\": \"I'm an installer. How do I receive leads?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"See the installer partner page to apply for exclusive or shared homeowner requests in your service area.\"}}]}</script>\n"
+scripts: "<script src=\"assets/js/data.js\"></script>\n<script src=\"assets/js/tools.js\"></script>\n"
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="index.html">Home</a> / Compare quotes</p>
+ <h1>Compare solar quotes from up to 3 local installers</h1>
+ <p class="lede">Six quick questions. You'll see your estimate before we ask for any contact details, and you decide who may reach out.</p>
+</div>
+<div class="wrap grid-2" style="align-items:start;padding-bottom:40px">
+ <div><form class="form lead-shell" id="lead-form" data-form="Solar quote request" data-steps data-redirect="thank-you.html" novalidate>
+ <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+ <div class="steps-bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+ <p class="fine mb0" data-step-count aria-live="polite">Step 1 of 6</p>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0">
+  <legend class="step-q">Where is the home?</legend>
+  <p class="muted">Prices, sunshine and incentives depend on location.</p>
+  <div class="row">
+   <div><label for="lf-zip">ZIP or postal code</label><input id="lf-zip" name="zip" inputmode="text" autocomplete="postal-code" required maxlength="10" placeholder="e.g. 85004"></div>
+   <div><label for="lf-state">State or region</label><select id="lf-state" name="state" required><option value="">Choose…</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="DC">Washington, DC</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="CA-ON">Canada — Ontario</option><option value="CA-OTHER">Canada — other province</option><option value="OTHER">Outside the US and Canada</option></select></div>
+  </div>
+  <div class="step-nav"><span></span><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">Do you own or rent?</legend>
+  <div class="choices" data-need-one data-autonext>
+   <label><input type="radio" name="ownership" value="Own"><span>I own it<small>House, townhouse or farm</small></span></label>
+   <label><input type="radio" name="ownership" value="Rent"><span>I rent<small>We'll show renter options</small></span></label>
+   <label><input type="radio" name="ownership" value="Buying soon"><span>Buying soon<small>Planning ahead</small></span></label>
+   <label><input type="radio" name="ownership" value="Business"><span>A business<small>Commercial property</small></span></label>
+  </div>
+  <p class="note" id="renter-note" hidden>Renting? Rooftop installers usually need the owner's approval. We'll also send you plug-in and community solar options, which don't need a roof. Or <a href="guides/solar-for-renters.html">read the renter's guide</a>.</p>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">What's your average monthly electric bill?</legend>
+  <div class="ctrl"><label for="lf-bill">Monthly bill <output id="lf-bill-out">$150</output></label>
+   <input id="lf-bill" name="bill" type="range" min="30" max="600" step="10" value="150"></div>
+  <p class="fine">Not sure? Most US homes pay between $120 and $200.</p>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">How much sun does your roof get?</legend>
+  <div class="choices" data-need-one data-autonext>
+   <label><input type="radio" name="sun" value="Full sun"><span>Full sun<small>Little or no shade</small></span></label>
+   <label><input type="radio" name="sun" value="Some shade"><span>Some shade<small>Trees part of the day</small></span></label>
+   <label><input type="radio" name="sun" value="Heavy shade"><span>Heavy shade<small>Mostly shaded</small></span></label>
+   <label><input type="radio" name="sun" value="Not sure"><span>Not sure<small>An installer will check</small></span></label>
+  </div>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>Continue</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">What are you interested in?</legend>
+  <div class="choices" data-need-one>
+   <label><input type="radio" name="interest" value="Solar panels"><span>Solar panels</span></label>
+   <label><input type="radio" name="interest" value="Solar + battery"><span>Solar + battery</span></label>
+   <label><input type="radio" name="interest" value="Battery only"><span>Battery backup only</span></label>
+   <label><input type="radio" name="interest" value="Plug-in or portable"><span>Plug-in or portable</span></label>
+  </div>
+  <div class="row">
+   <div><label for="lf-when">When would you like it installed?</label><select id="lf-when" name="timeline"><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Just researching</option></select></div>
+   <div><label for="lf-pay">How would you prefer to pay?</label><select id="lf-pay" name="payment"><option>Not sure yet</option><option>Cash</option><option>Loan</option><option>Lease or PPA</option></select></div>
+  </div>
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="button" class="btn sun" data-next>See my estimate</button></div>
+ </fieldset>
+
+ <fieldset class="step" style="border:0;padding:0;margin:0" hidden>
+  <legend class="step-q">Your estimate is ready</legend>
+  <div class="kpis" id="lf-preview" aria-live="polite">
+   <div class="kpi"><b data-p="size">—</b><span>Suggested system</span></div>
+   <div class="kpi good"><b data-p="save">—</b><span>First-year savings</span></div>
+   <div class="kpi"><b data-p="payback">—</b><span>Estimated payback</span></div>
+  </div>
+  <p class="fine">Where should we send the full breakdown and up to three local quotes?</p>
+  <div class="row">
+   <div><label for="lf-name">Full name</label><input id="lf-name" name="name" required autocomplete="name"></div>
+   <div><label for="lf-email">Email</label><input id="lf-email" name="email" type="email" required autocomplete="email"></div>
+  </div>
+  <div class="row">
+   <div><label for="lf-phone">Phone <span class="muted">(optional)</span></label><input id="lf-phone" name="phone" type="tel" autocomplete="tel"></div>
+   <div><label for="lf-contact">Who may contact you?</label><select id="lf-contact" name="contact_pref"><option>Up to 3 vetted installers</option><option>1 installer only</option><option>Email only — no calls</option></select></div>
+  </div>
+  <label class="check"><input type="checkbox" name="consent" value="Yes" required> I agree that Simple.solar and up to three matched solar companies may contact me about my request by email, phone or text, including by automated means. Consent is not a condition of any purchase. I can opt out at any time. See the <a href="privacy.html">privacy policy</a>.</label>
+  <input type="hidden" name="estimate" value="">
+  <div class="step-nav"><button type="button" class="btn ghost" data-prev>Back</button><button type="submit" class="btn sun">Send my free quotes</button></div>
+ </fieldset>
+ <p class="form-status" aria-live="polite"></p>
+ <ul class="trust"><li>Free, no obligation</li><li>Shared with 3 companies at most</li><li>Email-only option</li><li>Unsubscribe any time</li></ul>
+</form>
+</div>
+ <div class="stack">
+  <div class="panel sunny">
+   <h3 class="mt0">Why compare three quotes?</h3>
+   <p>Installed prices for the same home commonly differ by 20% or more between companies. On a $20,000 system that's $4,000 for an hour of reading. Three quotes also show you which equipment and warranties are normal in your area.</p>
+  </div>
+  <div class="panel">
+   <h3 class="mt0">What happens next</h3>
+   <ol style="padding-left:1.2em;margin:0">
+    <li>We email your estimate within minutes.</li>
+    <li>We match you with up to three licensed, insured installers serving your ZIP (or fewer if you chose).</li>
+    <li>Each installer reviews satellite imagery and sends a quote. Most also offer a free site visit.</li>
+    <li>Compare them with our <a href="guides/solar-quote-checklist.html">quote checklist</a>. Pick one, or none.</li>
+   </ol>
+  </div>
+  <div class="panel leafy">
+   <h3 class="mt0">Renting, or on a tight budget?</h3>
+   <p class="mb0">You don't need a roof you own. Try the <a href="tools/plug-in-solar.html">plug-in solar calculator</a>, read about <a href="guides/solar-for-renters.html">solar for renters</a>, or <a href="tools/power-station.html">size a portable power station</a>.</p>
+  </div>
+ </div>
+</div>
+<div class="wrap"><div class="ad-slot" data-slot="inArticle"></div></div>
+<section class="band paper">
+ <div class="wrap read">
+  <h2>Quote request questions</h2>
+  <details class="faq"><summary>Is it really free?</summary><p>Yes. You never pay Simple.solar anything. Like most quote services, we may receive a referral fee from installers, which keeps the site free. It doesn't change your price or our calculators.</p></details>
+  <details class="faq"><summary>Will I get a lot of phone calls?</summary><p>No. Your request is shared with no more than three companies, and you can choose one installer or email only. Every company must honor opt-out requests immediately.</p></details>
+  <details class="faq"><summary>How accurate is the instant estimate?</summary><p>It's a planning number based on your state's average electricity price and sunshine, a typical installed price per watt, and your bill. Real quotes account for your roof's angle, shade, local permits and equipment, so expect them to differ.</p></details>
+  <details class="faq"><summary>What makes an installer "vetted"?</summary><p>Partners must hold the licenses your state requires, carry liability and workers' compensation insurance, offer a written workmanship warranty, and agree to our no-pressure sales standards. Complaints are reviewed, and partners who break the rules are removed.</p></details>
+  <details class="faq"><summary>I'm an installer. How do I receive leads?</summary><p>See the <a href="installers.html">installer partner page</a> to apply for exclusive or shared homeowner requests in your service area.</p></details>
+ </div>
+</section>

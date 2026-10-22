@@ -1,0 +1,55 @@
+---
+layout: "default"
+title: "Solar Savings Calculator 2026: Cost, Payback and 25-Year Savings | Simple.solar"
+description: "Free solar savings calculator. Enter your bill and state to see system size, cost, yearly savings, payback and 25-year net savings. Every assumption is editable."
+canon: "https://simple.solar/tools/savings-calculator.html"
+r: "../"
+nav: "tools"
+og_type: "website"
+jsonld: "<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"FAQPage\", \"mainEntity\": [{\"@type\": \"Question\", \"name\": \"Why is my real quote different?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"Quotes reflect your exact roof angle, shade, local labor and permit costs, and equipment. Use this as a sanity check: if a quote's price per watt is far above $3.50 or the promised savings are far above ours, ask why.\"}}, {\"@type\": \"Question\", \"name\": \"Does this include a battery?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No. Batteries usually add $11,000 to $17,000 and mainly pay off with time-of-use rates or poor export credits. Size one with the battery backup sizer.\"}}, {\"@type\": \"Question\", \"name\": \"Is the federal tax credit included?\", \"acceptedAnswer\": {\"@type\": \"Answer\", \"text\": \"No, because the 30% homeowner credit ended for systems installed after December 31, 2025. If your state offers a credit or rebate, add it with the incentives slider. See solar incentives in 2026.\"}}]}</script>\n<script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Solar Savings Calculator \u2014 Cost, Payback and 25-Year Savings\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Any\", \"offers\": {\"@type\": \"Offer\", \"price\": \"0\", \"priceCurrency\": \"USD\"}, \"url\": \"https://simple.solar/tools/savings-calculator.html\"}</script>\n"
+scripts: "<script src=\"../assets/js/data.js\"></script>\n<script src=\"../assets/js/tools.js\"></script>\n"
+---
+<div class="wrap page-head">
+ <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Calculators</a> / Savings</p>
+ <h1>Solar savings calculator</h1>
+ <p class="lede">See what a rooftop system could cost, save and earn over 25 years. Change any assumption and the numbers update instantly.</p>
+</div>
+<div class="wrap tool-grid">
+ <form class="form panel" id="savings-calc" onsubmit="return false">
+  <div><label for="sc-state">State</label><select id="sc-state" name="state"></select></div>
+  <div class="ctrl"><label for="sc-bill">Monthly electric bill <output id="sc-out-bill">$150</output></label><input id="sc-bill" name="bill" type="range" min="30" max="600" step="5" value="150"></div>
+  <div><label for="sc-shade">Roof sun</label><select id="sc-shade" name="shade"><option value="1">Full sun, facing south, east or west</option><option value="0.85">Some shade or a less ideal angle</option><option value="0.65">Heavy shade</option></select></div>
+  <div class="ctrl"><label for="sc-offset">Share of usage to cover <output id="sc-out-offset">90%</output></label><input id="sc-offset" name="offset" type="range" min="40" max="110" step="5" value="90"></div>
+  <div class="ctrl"><label for="sc-cpw">Installed price per watt <output id="sc-out-cpw">$3.00</output></label><input id="sc-cpw" name="cpw" type="range" min="2" max="4.5" step="0.05" value="3"></div>
+  <div class="ctrl"><label for="sc-inc">Incentives and rebates <output id="sc-out-inc">0%</output></label><input id="sc-inc" name="incentive" type="range" min="0" max="50" step="1" value="0"></div>
+  <div class="ctrl"><label for="sc-esc">Yearly electricity price rise <output id="sc-out-esc">3%</output></label><input id="sc-esc" name="esc" type="range" min="0" max="6" step="0.5" value="3"></div>
+  <p class="fine mb0">Defaults: your state's average power price and sunshine, a $3.00/W installed price (between EnergySage's ~$2.60 and SEIA's $3.36 for 2026) and no federal tax credit, which ended for homeowner systems installed after 2025.</p>
+ </form>
+ <div class="result" aria-live="polite">
+  <div class="kpis">
+   <div class="kpi"><b id="k-size">—</b><span>System size</span></div>
+   <div class="kpi"><b id="k-panels">—</b><span>Panels (430 W)</span></div>
+   <div class="kpi"><b id="k-cost">—</b><span>Cost after incentives</span></div>
+   <div class="kpi good"><b id="k-save">—</b><span>First-year savings</span></div>
+   <div class="kpi"><b id="k-pay">—</b><span>Payback</span></div>
+   <div class="kpi good"><b id="k-total">—</b><span>25-year net savings</span></div>
+   <div class="kpi"><b id="k-prod">—</b><span>Yearly production</span></div>
+   <div class="kpi"><b id="k-rate">—</b><span>Power price / sun hours</span></div>
+  </div>
+  <h3>Cumulative savings, years 1–25</h3>
+  <div class="bars" id="sc-bars" aria-hidden="true"></div>
+  <div class="bars-legend"><span>Year 1</span><span>Pink = still paying off</span><span>Year 25</span></div>
+  <p id="sc-verdict" style="margin-top:16px;font-weight:700"></p>
+  <a class="btn sun" href="../quotes.html">Check this against real quotes</a>
+ </div>
+</div>
+<div class="wrap"><div class="ad-slot" data-slot="inArticle"></div></div>
+<section class="band paper"><div class="wrap read prose">
+ <h2 class="mt0">How the calculator works</h2>
+ <p>We convert your bill into yearly kilowatt-hours using your state's average residential price, then size a system to cover your chosen share of that usage. Each kilowatt of panels produces about <b>sun hours × 365 × 0.78</b> kWh a year. The 0.78 accounts for inverter losses, wiring, heat and dirt.</p>
+ <p>Savings start at your current price, grow with the yearly price rise you choose, and shrink by 0.5% a year as panels age. A 15% haircut covers the gap between what you use at home and what you export, since many utilities now credit exports at less than the retail price. See <a href="../guides/net-metering-explained.html">net metering explained</a>.</p>
+ <h2>Questions</h2>
+ <details class="faq"><summary>Why is my real quote different?</summary><p>Quotes reflect your exact roof angle, shade, local labor and permit costs, and equipment. Use this as a sanity check: if a quote's price per watt is far above $3.50 or the promised savings are far above ours, ask why.</p></details>
+ <details class="faq"><summary>Does this include a battery?</summary><p>No. Batteries usually add $11,000 to $17,000 and mainly pay off with time-of-use rates or poor export credits. Size one with the <a href="battery-sizer.html">battery backup sizer</a>.</p></details>
+ <details class="faq"><summary>Is the federal tax credit included?</summary><p>No, because the 30% homeowner credit ended for systems installed after December 31, 2025. If your state offers a credit or rebate, add it with the incentives slider. See <a href="../guides/solar-incentives.html">solar incentives in 2026</a>.</p></details>
+</div></section>
