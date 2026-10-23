@@ -19,8 +19,11 @@ Plain-English solar decisions: free calculators, 20 guides, 51 state pages, a hi
 python3 _build/build.py
 ```
 
+## Publishing
+GitHub Pages publishes the `gh-pages` branch (kept identical to `main`). After changing `main`, merge `main` into `gh-pages` to publish. Alternatively switch Settings → Pages → Source to `main` / root and the `gh-pages` branch can be deleted.
+
 ## After launch
-1. GitHub → Settings → Pages → Source: deploy from branch `main`, folder `/ (root)`. Custom domain `simple.solar`, then tick Enforce HTTPS.
+1. GitHub → Settings → Pages: confirm the source branch and the custom domain `simple.solar`, then tick Enforce HTTPS.
 2. DNS at the registrar: A records for `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; CNAME `www` → `webworksa1.github.io`.
 3. AdSense: add the site, `ads.txt` is already at the root. Turn on Auto ads; optionally paste display-unit slot IDs into `assets/js/config.js` → `adSlots`.
 4. AdSense → Privacy & messaging: enable Google's certified consent message for EEA/UK visitors.
